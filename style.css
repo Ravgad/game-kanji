@@ -1,75 +1,55 @@
-/* Warna-warna utama */
 :root {
     --primary: #4A90E2;
-    --primary-dark: #357ABD;
     --success: #2ecc71;
     --danger: #e74c3c;
     --bg: #f5f7fa;
     --text: #2d3436;
 }
 
-body {
-    font-family: 'Segoe UI', sans-serif;
-    background-color: var(--bg);
-    color: var(--text);
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-}
+body { font-family: 'Segoe UI', sans-serif; background: var(--bg); display: flex; justify-content: center; padding: 20px; color: var(--text); }
+.game-container { width: 100%; max-width: 480px; background: white; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); padding: 25px; }
+.hidden { display: none !important; }
 
-.game-container {
-    width: 100%;
-    max-width: 500px;
-    background: white;
-    border-radius: 20px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-    padding: 25px;
-}
-
-.hidden { display: none; }
-
-/* Tombol-tombol */
-button {
-    cursor: pointer;
-    border: none;
-    transition: all 0.2s ease;
-    border-radius: 12px;
-}
-
-button:active { transform: scale(0.92); }
-
-/* Grid Level & Qty */
-.section-title { font-size: 14px; font-weight: bold; color: #636e72; margin: 15px 0 8px 0; }
-.choice-grid, .level-grid { display: grid; gap: 10px; margin-bottom: 10px; }
-.level-grid { grid-template-columns: repeat(3, 1fr); }
+/* Grid & Buttons */
+.level-grid, .choice-grid { display: grid; gap: 8px; margin-bottom: 15px; }
+.level-grid { grid-template-columns: repeat(5, 1fr); }
 .choice-grid { grid-template-columns: repeat(3, 1fr); }
+.btn-choice { padding: 12px; border: none; background: #f1f2f6; font-weight: bold; border-radius: 10px; cursor: pointer; }
+.btn-choice.selected { background: var(--primary); color: white; }
 
-.btn-choice { padding: 12px 5px; background: #f1f2f6; font-weight: 600; }
-.btn-choice.selected { background: var(--primary); color: white; box-shadow: 0 4px 10px rgba(74,144,226,0.3); }
+/* Styling Toggle Switch */
+.setting-item { display: flex; justify-content: space-between; align-items: center; background: #f8f9fa; padding: 15px; border-radius: 12px; margin-top: 10px; }
+.switch { position: relative; display: inline-block; width: 50px; height: 24px; }
+.switch input { opacity: 0; width: 0; height: 0; }
+.slider { position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0; background-color: #ccc; transition: .4s; border-radius: 34px; }
+.slider:before { position: absolute; content: ""; height: 18px; width: 18px; left: 4px; bottom: 3px; background-color: white; transition: .4s; border-radius: 50%; }
+input:checked + .slider { background-color: var(--success); }
+input:checked + .slider:before { transform: translateX(24px); }
 
-.btn-start { width: 100%; margin-top: 30px; padding: 18px; background: var(--success); color: white; font-size: 18px; font-weight: bold; }
+/* Quiz Area */
+.header { display: flex; align-items: center; margin-bottom: 20px; }
+.progress-bar { flex: 1; height: 10px; background: #eee; border-radius: 10px; margin: 0 15px; overflow: hidden; }
+.progress-fill { height: 100%; background: var(--primary); width: 0%; transition: 0.3s; }
+.kanji-display { font-size: 90px; text-align: center; margin-bottom: 10px; }
+#kanji-meaning { text-align: center; color: #636e72; font-weight: 500; min-height: 24px; }
 
-/* Header Kuis */
-.header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
-.progress-bar { flex-grow: 1; height: 12px; background: #eee; margin: 0 15px; border-radius: 10px; overflow: hidden; }
-.progress-fill { height: 100%; background: linear-gradient(90deg, var(--primary), #a29bfe); width: 0%; transition: width 0.4s; }
-
-/* Soal & Jawaban */
-.kanji-display { font-size: 90px; text-align: center; margin: 10px 0; }
-.answer-box { font-size: 32px; text-align: center; min-height: 60px; border-bottom: 4px solid var(--primary); margin: 20px auto; width: 80%; letter-spacing: 4px; display: flex; align-items: center; justify-content: center; }
+.answer-box { font-size: 32px; text-align: center; min-height: 50px; border-bottom: 4px solid var(--primary); width: 80%; margin: 0 auto 25px; letter-spacing: 4px; }
 
 /* Keyboard */
-.keyboard { background: #f9f9f9; padding: 12px; border-radius: 18px; }
-.kb-tabs { display: flex; gap: 8px; margin-bottom: 12px; }
-.tab-btn { flex: 1; padding: 10px; background: #dfe6e9; font-weight: bold; }
+.keyboard { background: #f9f9f9; padding: 10px; border-radius: 15px; }
+.kb-tabs { display: flex; gap: 5px; margin-bottom: 10px; }
+.tab-btn { flex: 1; padding: 10px; border: none; border-radius: 8px; cursor: pointer; font-weight: bold; }
 .tab-btn.active { background: var(--text); color: white; }
-.keys-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 6px; }
-.key { padding: 12px 0; background: white; border: 1px solid #ddd; font-size: 18px; }
-.kb-controls { display: flex; gap: 8px; margin-top: 8px; }
-.btn-delete { flex: 1; padding: 12px; background: #fab1a0; font-weight: bold; }
-.btn-submit { flex: 2; padding: 12px; background: var(--primary); color: white; font-weight: bold; }
+.keys-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 6px; max-height: 200px; overflow-y: auto; padding-right: 5px; }
+.key { padding: 12px 0; border: 1px solid #ddd; background: white; border-radius: 8px; cursor: pointer; font-size: 20px; }
+.kb-controls { display: flex; gap: 10px; margin-top: 10px; }
+.btn-delete, .btn-submit { padding: 15px; border: none; border-radius: 10px; cursor: pointer; font-weight: bold; }
+.btn-delete { flex: 1; background: #fab1a0; }
+.btn-submit { flex: 2; background: var(--primary); color: white; }
 
-/* Review */
-.score-card { text-align: center; background: #f8f9fa; padding: 20px; border-radius: 15px; margin: 20px 0; }
-.score-value { font-size: 48px; font-weight: bold; color: var(--primary); }
-.review-item { padding: 12px; border-bottom: 1px solid #eee; display: flex; justify-content: space-between; align-items: center; }
+/* Result */
+.score-card { text-align: center; background: #f8f9fa; padding: 25px; border-radius: 20px; margin-bottom: 20px; }
+.score-value { font-size: 60px; font-weight: bold; color: var(--primary); }
+.review-scroll { max-height: 280px; overflow-y: auto; border: 1px solid #eee; border-radius: 12px; }
+.review-item { padding: 15px; border-bottom: 1px solid #eee; text-align: left; }
+.btn-home { width: 100%; padding: 15px; background: var(--text); color: white; border: none; border-radius: 12px; font-weight: bold; cursor: pointer; margin-top: 20px; }
