@@ -1,0 +1,75 @@
+/* Warna-warna utama */
+:root {
+    --primary: #4A90E2;
+    --primary-dark: #357ABD;
+    --success: #2ecc71;
+    --danger: #e74c3c;
+    --bg: #f5f7fa;
+    --text: #2d3436;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.game-container {
+    width: 100%;
+    max-width: 500px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    padding: 25px;
+}
+
+.hidden { display: none; }
+
+/* Tombol-tombol */
+button {
+    cursor: pointer;
+    border: none;
+    transition: all 0.2s ease;
+    border-radius: 12px;
+}
+
+button:active { transform: scale(0.92); }
+
+/* Grid Level & Qty */
+.section-title { font-size: 14px; font-weight: bold; color: #636e72; margin: 15px 0 8px 0; }
+.choice-grid, .level-grid { display: grid; gap: 10px; margin-bottom: 10px; }
+.level-grid { grid-template-columns: repeat(3, 1fr); }
+.choice-grid { grid-template-columns: repeat(3, 1fr); }
+
+.btn-choice { padding: 12px 5px; background: #f1f2f6; font-weight: 600; }
+.btn-choice.selected { background: var(--primary); color: white; box-shadow: 0 4px 10px rgba(74,144,226,0.3); }
+
+.btn-start { width: 100%; margin-top: 30px; padding: 18px; background: var(--success); color: white; font-size: 18px; font-weight: bold; }
+
+/* Header Kuis */
+.header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+.progress-bar { flex-grow: 1; height: 12px; background: #eee; margin: 0 15px; border-radius: 10px; overflow: hidden; }
+.progress-fill { height: 100%; background: linear-gradient(90deg, var(--primary), #a29bfe); width: 0%; transition: width 0.4s; }
+
+/* Soal & Jawaban */
+.kanji-display { font-size: 90px; text-align: center; margin: 10px 0; }
+.answer-box { font-size: 32px; text-align: center; min-height: 60px; border-bottom: 4px solid var(--primary); margin: 20px auto; width: 80%; letter-spacing: 4px; display: flex; align-items: center; justify-content: center; }
+
+/* Keyboard */
+.keyboard { background: #f9f9f9; padding: 12px; border-radius: 18px; }
+.kb-tabs { display: flex; gap: 8px; margin-bottom: 12px; }
+.tab-btn { flex: 1; padding: 10px; background: #dfe6e9; font-weight: bold; }
+.tab-btn.active { background: var(--text); color: white; }
+.keys-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 6px; }
+.key { padding: 12px 0; background: white; border: 1px solid #ddd; font-size: 18px; }
+.kb-controls { display: flex; gap: 8px; margin-top: 8px; }
+.btn-delete { flex: 1; padding: 12px; background: #fab1a0; font-weight: bold; }
+.btn-submit { flex: 2; padding: 12px; background: var(--primary); color: white; font-weight: bold; }
+
+/* Review */
+.score-card { text-align: center; background: #f8f9fa; padding: 20px; border-radius: 15px; margin: 20px 0; }
+.score-value { font-size: 48px; font-weight: bold; color: var(--primary); }
+.review-item { padding: 12px; border-bottom: 1px solid #eee; display: flex; justify-content: space-between; align-items: center; }
