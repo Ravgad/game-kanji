@@ -6,50 +6,48 @@
     --text: #2d3436;
 }
 
-body { font-family: 'Segoe UI', sans-serif; background: var(--bg); display: flex; justify-content: center; padding: 20px; color: var(--text); }
-.game-container { width: 100%; max-width: 480px; background: white; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); padding: 25px; }
+body { font-family: sans-serif; background: var(--bg); display: flex; justify-content: center; padding: 20px; color: var(--text); }
+.game-container { width: 100%; max-width: 480px; background: white; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); padding: 25px; min-height: 600px; }
 .hidden { display: none !important; }
 
-/* Grid & Buttons */
-.level-grid, .choice-grid { display: grid; gap: 8px; margin-bottom: 15px; }
+/* Main Menu Buttons */
+.btn-main { width: 100%; display: flex; align-items: center; padding: 18px; margin-bottom: 15px; border: none; border-radius: 15px; background: #f1f2f6; cursor: pointer; transition: 0.2s; text-align: left; }
+.btn-main:hover { transform: scale(1.02); background: #fff; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+.btn-main .icon { font-size: 30px; margin-right: 15px; }
+
+/* Grid System */
+.level-grid, .choice-grid { display: grid; gap: 8px; margin-bottom: 20px; }
 .level-grid { grid-template-columns: repeat(5, 1fr); }
 .choice-grid { grid-template-columns: repeat(3, 1fr); }
+
 .btn-choice { padding: 12px; border: none; background: #f1f2f6; font-weight: bold; border-radius: 10px; cursor: pointer; }
 .btn-choice.selected { background: var(--primary); color: white; }
 
-/* Styling Toggle Switch */
-.setting-item { display: flex; justify-content: space-between; align-items: center; background: #f8f9fa; padding: 15px; border-radius: 12px; margin-top: 10px; }
-.switch { position: relative; display: inline-block; width: 50px; height: 24px; }
+/* Toggle & Start */
+.setting-item { display: flex; justify-content: space-between; align-items: center; background: #f8f9fa; padding: 15px; border-radius: 12px; margin-bottom: 15px; }
+.btn-start { width: 100%; padding: 18px; background: var(--success); color: white; border-radius: 12px; border: none; font-size: 18px; font-weight: bold; cursor: pointer; }
+
+/* Quiz & Keyboard */
+.kanji-display { font-size: 80px; text-align: center; margin: 20px 0; }
+.answer-box { font-size: 32px; text-align: center; min-height: 50px; border-bottom: 4px solid var(--primary); width: 80%; margin: 0 auto 20px; letter-spacing: 4px; }
+.keys-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 5px; max-height: 180px; overflow-y: auto; background: #f9f9f9; padding: 10px; border-radius: 10px; }
+.key { padding: 12px 0; border: 1px solid #ddd; background: white; border-radius: 5px; cursor: pointer; font-size: 18px; }
+
+/* Review List */
+.review-scroll { max-height: 250px; overflow-y: auto; border: 1px solid #eee; border-radius: 10px; margin-top: 10px; }
+.review-item { padding: 10px; border-bottom: 1px solid #eee; text-align: left; }
+
+.choice-grid { 
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr); /* Ubah jadi 4 kolom */
+    gap: 8px; 
+    margin-bottom: 20px; 
+}
+
+/* Toggle Switch CSS */
+.switch { position: relative; width: 40px; height: 20px; }
 .switch input { opacity: 0; width: 0; height: 0; }
-.slider { position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0; background-color: #ccc; transition: .4s; border-radius: 34px; }
-.slider:before { position: absolute; content: ""; height: 18px; width: 18px; left: 4px; bottom: 3px; background-color: white; transition: .4s; border-radius: 50%; }
+.slider { position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0; background-color: #ccc; transition: .4s; border-radius: 20px; }
+.slider:before { position: absolute; content: ""; height: 16px; width: 16px; left: 2px; bottom: 2px; background-color: white; transition: .4s; border-radius: 50%; }
 input:checked + .slider { background-color: var(--success); }
-input:checked + .slider:before { transform: translateX(24px); }
-
-/* Quiz Area */
-.header { display: flex; align-items: center; margin-bottom: 20px; }
-.progress-bar { flex: 1; height: 10px; background: #eee; border-radius: 10px; margin: 0 15px; overflow: hidden; }
-.progress-fill { height: 100%; background: var(--primary); width: 0%; transition: 0.3s; }
-.kanji-display { font-size: 90px; text-align: center; margin-bottom: 10px; }
-#kanji-meaning { text-align: center; color: #636e72; font-weight: 500; min-height: 24px; }
-
-.answer-box { font-size: 32px; text-align: center; min-height: 50px; border-bottom: 4px solid var(--primary); width: 80%; margin: 0 auto 25px; letter-spacing: 4px; }
-
-/* Keyboard */
-.keyboard { background: #f9f9f9; padding: 10px; border-radius: 15px; }
-.kb-tabs { display: flex; gap: 5px; margin-bottom: 10px; }
-.tab-btn { flex: 1; padding: 10px; border: none; border-radius: 8px; cursor: pointer; font-weight: bold; }
-.tab-btn.active { background: var(--text); color: white; }
-.keys-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 6px; max-height: 200px; overflow-y: auto; padding-right: 5px; }
-.key { padding: 12px 0; border: 1px solid #ddd; background: white; border-radius: 8px; cursor: pointer; font-size: 20px; }
-.kb-controls { display: flex; gap: 10px; margin-top: 10px; }
-.btn-delete, .btn-submit { padding: 15px; border: none; border-radius: 10px; cursor: pointer; font-weight: bold; }
-.btn-delete { flex: 1; background: #fab1a0; }
-.btn-submit { flex: 2; background: var(--primary); color: white; }
-
-/* Result */
-.score-card { text-align: center; background: #f8f9fa; padding: 25px; border-radius: 20px; margin-bottom: 20px; }
-.score-value { font-size: 60px; font-weight: bold; color: var(--primary); }
-.review-scroll { max-height: 280px; overflow-y: auto; border: 1px solid #eee; border-radius: 12px; }
-.review-item { padding: 15px; border-bottom: 1px solid #eee; text-align: left; }
-.btn-home { width: 100%; padding: 15px; background: var(--text); color: white; border: none; border-radius: 12px; font-weight: bold; cursor: pointer; margin-top: 20px; }
+input:checked + .slider:before { transform: translateX(20px); }

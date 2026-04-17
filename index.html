@@ -3,41 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Master Kanji Quiz</title>
+    <title>J-Master Learning App</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <div class="game-container">
-    <div id="screen-home" class="screen">
-        <h1>⛩️ Kanji Quest</h1>
-        <p class="subtitle">Belajar Kanji JLPT dengan menyenangkan</p>
-
-        <div class="section-title">PILIH LEVEL:</div>
-        <div class="level-grid">
-            <button class="btn-choice btn-level selected" onclick="selectLevel('N5', this)">N5</button>
-            <button class="btn-choice btn-level" onclick="selectLevel('N4', this)">N4</button>
-            <button class="btn-choice btn-level" onclick="selectLevel('N3', this)">N3</button>
-            <button class="btn-choice btn-level" onclick="selectLevel('N2', this)">N2</button>
-            <button class="btn-choice btn-level" onclick="selectLevel('N1', this)">N1</button>
+    <div id="screen-main-menu" class="screen">
+        <h1>日本語-Master</h1>
+        <p class="subtitle">Pilih Mode Belajar Kamu</p>
+        
+        <div class="main-nav">
+            <button class="btn-main" onclick="openSubMenu('kanji')">
+                <span class="icon">⛩️</span>
+                <div class="text"><b>Menu Kanji</b><br><small>Hafalan Kanji JLPT</small></div>
+            </button>
+            <button class="btn-main" onclick="openSubMenu('kotoba')">
+                <span class="icon">📖</span>
+                <div class="text"><b>Menu Kotoba</b><br><small>Kosakata & Romaji</small></div>
+            </button>
+            <button class="btn-main" onclick="openSubMenu('ujian')">
+                <span class="icon">📝</span>
+                <div class="text"><b>Menu Ujian</b><br><small>Stage Challenge</small></div>
+            </button>
         </div>
+    </div>
+
+    <div id="screen-home" class="screen hidden">
+        <button class="btn-back" onclick="showScreen('main-menu')">← Kembali</button>
+        <h2 id="menu-title">Menu</h2>
+        
+        <div class="section-title" id="select-label">PILIH LEVEL:</div>
+        <div class="level-grid" id="level-buttons"></div>
 
         <div class="section-title">JUMLAH SOAL:</div>
         <div class="choice-grid">
             <button class="btn-choice btn-qty selected" onclick="selectQty(5, this)">5</button>
             <button class="btn-choice btn-qty" onclick="selectQty(10, this)">10</button>
             <button class="btn-choice btn-qty" onclick="selectQty(15, this)">15</button>
-        </div>
+            <button class="btn-choice btn-qty" onclick="selectQty('all', this)">FULL</button>
+       </div>
 
         <div class="setting-item">
-            <span>Tampilkan Arti Kanji</span>
+            <span>Tampilkan Arti</span>
             <label class="switch">
                 <input type="checkbox" id="toggle-meaning" checked>
                 <span class="slider round"></span>
             </label>
         </div>
 
-        <button class="btn-start" onclick="startQuiz()">MULAI BELAJAR ▶</button>
+        <button class="btn-start" onclick="startQuiz()">MULAI ▶</button>
     </div>
 
     <div id="screen-quiz" class="screen hidden">
@@ -46,16 +61,13 @@
             <div class="progress-bar"><div id="progress-fill" class="progress-fill"></div></div>
             <span id="q-count">0/0</span>
         </div>
-
-        <div class="kanji-display" id="current-kanji"></div>
+        <div class="kanji-display" id="current-question"></div>
         <p id="kanji-meaning"></p>
-        
         <div class="answer-box" id="user-answer"></div>
-
         <div class="keyboard">
             <div class="kb-tabs">
                 <button class="tab-btn active" id="btn-hira" onclick="switchKb('hira')">あ Hira</button>
-                <button class="tab-btn" id="btn-kata" onclick="switchKb('kata')">が Hira</button>
+                <button class="tab-btn" id="btn-kata" onclick="switchKb('kata')">ア Kata</button>
             </div>
             <div class="keys-grid" id="keys-container"></div>
             <div class="kb-controls">
@@ -69,10 +81,10 @@
         <h2>Hasil Belajar</h2>
         <div class="score-card">
             <div id="final-score" class="score-value">0</div>
-            <div class="label">Total Poin</div>
+            <div class="label">Total Skor</div>
         </div>
         <div id="review-list" class="review-scroll"></div>
-        <button class="btn-home" onclick="location.reload()">KEMBALI KE HOME</button>
+        <button class="btn-home" onclick="showScreen('main-menu')">KEMBALI KE MENU UTAMA</button>
     </div>
 </div>
 
