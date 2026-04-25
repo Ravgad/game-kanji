@@ -5,6 +5,8 @@ let databases = {
     ujian: { '1': [], '2': [], '3': [], '4': [], '5': [] }
 };
 
+let flashcards = [];
+let fcIndex = 0;
 let selectedLevel = 'N5';
 let selectedQty = 5;
 let isMeaningVisible = true;
@@ -14,14 +16,15 @@ let score = 0;
 let currentInput = "";
 let history = [];
 
-const hiraList = "あいうえおかきくけこさしすせそたちつてとなにぬねのはひふへほまみむめもやゆよらりるれろわをんがぎぐげござじずぜぞだぢづでどばびぶべぼぱぴぷぺぽゃゅょっ".split("");
+const hiraList = "あいうえおかきくけこさしすせそたちつteとなにぬねのはひふへほまみむめもやゆよらりるれろわをんがぎぐげござじずぜぞだぢづでどばびぶべぼぱぴぷぺぽゃゅょっ".split("");
 const kataList = "アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワヲンガギグゲゴザジズゼゾダヂヅデドバビブベボパピプペポャュョッ".split("");
 
-// Load 3 Database Berbeda
+// 1. Inisialisasi: Load semua CSV
 async function loadAllDatabases() {
     await loadCSV('kanji.csv', 'kanji');
     await loadCSV('kotoba.csv', 'kotoba');
     await loadCSV('ujian.csv', 'ujian');
+    await loadFlashcardCSV();
 }
 
 async function loadCSV(fileName, mode) {
@@ -36,7 +39,7 @@ async function loadCSV(fileName, mode) {
                 if(databases[mode][lvl]) {
                     databases[mode][lvl].push({
                         q: cols[1].trim(), 
-                        a: cols[2].trim().split(';'), // Multi-Jawaban didukung di sini
+                        a: cols[2].trim().split(';'), 
                         m: cols[3].trim()
                     });
                 }
@@ -45,8 +48,29 @@ async function loadCSV(fileName, mode) {
     } catch (e) { console.warn(fileName + " tidak ditemukan."); }
 }
 
+async function loadFlashcardCSV() {
+    try {
+        const response = await fetch('flashcard.csv');
+        const data = await response.text();
+        const rows = data.split('\n').slice(1);
+        flashcards = rows.map(row => {
+            const cols = row.split(',');
+            if (cols.length >= 3) {
+                return { k: cols[0].trim(), f: cols[1].trim(), m: cols[2].trim() };
+            }
+        }).filter(Boolean);
+    } catch (e) { console.warn("flashcard.csv tidak ditemukan."); }
+}
+
 loadAllDatabases();
 
+// 2. Navigasi Screen
+function showScreen(id) {
+    document.querySelectorAll('.screen').forEach(s => s.classList.add('hidden'));
+    document.getElementById('screen-' + id).classList.remove('hidden');
+}
+
+// 3. Logika Menu Utama & Sub-Menu
 function openSubMenu(mode) {
     currentMode = mode;
     showScreen('home');
@@ -77,26 +101,65 @@ function createLevelBtn(val, container, prefix = "") {
     container.appendChild(btn);
 }
 
+function selectQty(qty, btn) {
+    selectedQty = qty;
+    document.querySelectorAll('.btn-qty').forEach(b => b.classList.remove('selected'));
+    btn.classList.add('selected');
+}
+
+// 4. Logika Flashcard
+function startFlashcards() {
+    if (flashcards.length === 0) return alert("Database flashcard kosong!");
+    fcIndex = 0;
+    showScreen('flashcard');
+    updateFC();
+}
+
+function updateFC() {
+    const card = flashcards[fcIndex];
+    document.getElementById('fc-card').classList.remove('flipped');
+    document.getElementById('fc-front-text').innerText = card.k;
+    document.getElementById('fc-back-furi').innerText = card.f;
+    document.getElementById('fc-back-arti').innerText = card.m;
+    document.getElementById('fc-counter').innerText = `${fcIndex + 1}/${flashcards.length}`;
+}
+
+function flipCard() { document.getElementById('fc-card').classList.toggle('flipped'); }
+function nextFC() { if (fcIndex < flashcards.length - 1) { fcIndex++; updateFC(); } }
+function prevFC() { if (fcIndex > 0) { fcIndex--; updateFC(); } }
+
+function toggleEditFC() {
+    const form = document.getElementById('fc-edit-form');
+    form.classList.toggle('hidden');
+    if (!form.classList.contains('hidden')) {
+        const card = flashcards[fcIndex];
+        document.getElementById('edit-kanji').value = card.k;
+        document.getElementById('edit-furi').value = card.f;
+        document.getElementById('edit-arti').value = card.m;
+    }
+}
+
+function saveFCEdit() {
+    flashcards[fcIndex] = {
+        k: document.getElementById('edit-kanji').value,
+        f: document.getElementById('edit-furi').value,
+        m: document.getElementById('edit-arti').value
+    };
+    updateFC();
+    toggleEditFC();
+    alert("Berhasil disimpan!");
+}
+
+// 5. Logika Quiz
 function startQuiz() {
     const db = databases[currentMode][selectedLevel];
-    if (!db || db.length === 0) return alert("File CSV belum siap atau kosong!");
+    if (!db || db.length === 0) return alert("Data kosong untuk level ini!");
     
     isMeaningVisible = document.getElementById('toggle-meaning').checked;
-
-    // LOGIKA BARU: Cek apakah user pilih jumlah tertentu atau FULL
-    let limit;
-    if (selectedQty === 'all') {
-        limit = db.length; // Ambil semua soal yang ada di CSV stage tersebut
-    } else {
-        limit = selectedQty; // Ambil sesuai angka (5, 10, 15)
-    }
-
-    // Acak soal dan potong sesuai limit yang ditentukan tadi
-    currentQuestions = [...db].sort(() => Math.random() - 0.5).slice(0, limit);
+    let limit = (selectedQty === 'all') ? db.length : selectedQty;
     
-    questionIndex = 0; 
-    score = 0; 
-    history = [];
+    currentQuestions = [...db].sort(() => Math.random() - 0.5).slice(0, limit);
+    questionIndex = 0; score = 0; history = [];
     
     showScreen('quiz');
     loadQuestion();
@@ -106,8 +169,7 @@ function startQuiz() {
 function loadQuestion() {
     const q = currentQuestions[questionIndex];
     document.getElementById('current-question').innerText = q.q;
-    const meaningEl = document.getElementById('kanji-meaning');
-    meaningEl.innerText = isMeaningVisible ? "Arti: " + q.m : "";
+    document.getElementById('kanji-meaning').innerText = isMeaningVisible ? "Arti: " + q.m : "";
     document.getElementById('q-count').innerText = `${questionIndex + 1}/${currentQuestions.length}`;
     document.getElementById('progress-fill').style.width = `${(questionIndex / currentQuestions.length) * 100}%`;
     currentInput = ""; updateDisplay();
@@ -121,7 +183,7 @@ function renderKeys(list) {
     list.forEach(char => {
         const btn = document.createElement('button');
         btn.className = 'key'; btn.innerText = char;
-        btn.onclick = () => { if(currentInput.length < 12) { currentInput += char; updateDisplay(); } };
+        btn.onclick = () => { if(currentInput.length < 15) { currentInput += char; updateDisplay(); } };
         container.appendChild(btn);
     });
 }
@@ -137,7 +199,7 @@ function deleteChar() { currentInput = currentInput.slice(0, -1); updateDisplay(
 function submitAnswer() {
     if(!currentInput) return;
     const q = currentQuestions[questionIndex];
-    const isCorrect = q.a.includes(currentInput); // Cek apakah input ada di list jawaban
+    const isCorrect = q.a.includes(currentInput);
     if(isCorrect) score += 100;
     
     history.push({ q: q.q, a: q.a.join(' / '), u: currentInput, s: isCorrect, m: q.m });
@@ -150,43 +212,21 @@ function showResult() {
     showScreen('result');
     document.getElementById('final-score').innerText = score;
     const reviewList = document.getElementById('review-list');
-    
-    // Ini akan me-render soal yang SUDAH dijawab saja (yang ada di array history)
     reviewList.innerHTML = history.map(h => `
         <div class="review-item">
             <div style="display:flex; justify-content:space-between; font-weight:bold;">
                 <span>${h.q} <small>(${h.u})</small></span>
-                <span style="color:${h.s ? 'var(--success)' : 'var(--danger)'}">
-                    ${h.s ? '✓' : '✗'}
-                </span>
+                <span style="color:${h.s ? 'var(--success)' : 'var(--danger)'}">${h.s ? '✓' : '✗'}</span>
             </div>
             <div style="font-size:12px; color:#7f8c8d;">Benar: ${h.a} | Arti: ${h.m}</div>
         </div>
     `).join('');
 }
 
-function showScreen(id) {
-    document.querySelectorAll('.screen').forEach(s => s.classList.add('hidden'));
-    document.getElementById('screen-' + id).classList.remove('hidden');
-}
-
-function selectQty(qty, btn) {
-    selectedQty = qty;
-    document.querySelectorAll('.btn-qty').forEach(b => b.classList.remove('selected'));
-    btn.classList.add('selected');
-}
-
 function quitQuiz() {
-    // Jika belum ada soal yang dijawab sama sekali, langsung balik ke awal
     if (history.length === 0) {
-        if (confirm("Belum ada soal dijawab. Yakin ingin keluar?")) {
-            location.reload();
-        }
+        if (confirm("Keluar kuis?")) showScreen('main-menu');
         return;
     }
-
-    // Jika sudah ada soal terjawab, tawarkan untuk lihat hasil
-    if (confirm("Ingin berhenti dan lihat hasil skor sekarang?")) {
-        showResult(); // Panggil fungsi hasil untuk nampilin skor sementara
-    }
+    if (confirm("Ingin berhenti dan lihat hasil skor sekarang?")) showResult();
 }

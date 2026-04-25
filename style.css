@@ -8,6 +8,7 @@
 
 body { font-family: sans-serif; background: var(--bg); display: flex; justify-content: center; padding: 20px; color: var(--text); }
 .game-container { width: 100%; max-width: 480px; background: white; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); padding: 25px; min-height: 600px; }
+.screen { display: flex; flex-direction: column; }
 .hidden { display: none !important; }
 
 /* Main Menu Buttons */
@@ -18,7 +19,7 @@ body { font-family: sans-serif; background: var(--bg); display: flex; justify-co
 /* Grid System */
 .level-grid, .choice-grid { display: grid; gap: 8px; margin-bottom: 20px; }
 .level-grid { grid-template-columns: repeat(5, 1fr); }
-.choice-grid { grid-template-columns: repeat(3, 1fr); }
+.choice-grid { grid-template-columns: repeat(4, 1fr); }
 
 .btn-choice { padding: 12px; border: none; background: #f1f2f6; font-weight: bold; border-radius: 10px; cursor: pointer; }
 .btn-choice.selected { background: var(--primary); color: white; }
@@ -27,24 +28,41 @@ body { font-family: sans-serif; background: var(--bg); display: flex; justify-co
 .setting-item { display: flex; justify-content: space-between; align-items: center; background: #f8f9fa; padding: 15px; border-radius: 12px; margin-bottom: 15px; }
 .btn-start { width: 100%; padding: 18px; background: var(--success); color: white; border-radius: 12px; border: none; font-size: 18px; font-weight: bold; cursor: pointer; }
 
-/* Quiz & Keyboard */
+/* Quiz UI */
+.header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+.btn-quit { background: none; border: none; font-size: 24px; cursor: pointer; color: #999; }
+.progress-bar { flex-grow: 1; height: 10px; background: #eee; border-radius: 5px; margin: 0 15px; overflow: hidden; }
+.progress-fill { height: 100%; background: var(--success); width: 0%; transition: 0.3s; }
+
 .kanji-display { font-size: 80px; text-align: center; margin: 20px 0; }
-.answer-box { font-size: 32px; text-align: center; min-height: 50px; border-bottom: 4px solid var(--primary); width: 80%; margin: 0 auto 20px; letter-spacing: 4px; }
+.answer-box { font-size: 32px; text-align: center; min-height: 50px; border-bottom: 4px solid var(--primary); width: 80%; margin: 0 auto 20px; letter-spacing: 4px; min-width: 50px; }
+
+/* Keyboard */
+.kb-tabs { display: flex; gap: 10px; margin-bottom: 10px; }
+.tab-btn { flex: 1; padding: 8px; border: none; border-radius: 8px; cursor: pointer; background: #eee; }
+.tab-btn.active { background: var(--text); color: white; }
 .keys-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 5px; max-height: 180px; overflow-y: auto; background: #f9f9f9; padding: 10px; border-radius: 10px; }
 .key { padding: 12px 0; border: 1px solid #ddd; background: white; border-radius: 5px; cursor: pointer; font-size: 18px; }
+.kb-controls { display: grid; grid-template-columns: 1fr 2fr; gap: 10px; margin-top: 10px; }
+.btn-delete { padding: 15px; background: #ecf0f1; border: none; border-radius: 10px; cursor: pointer; }
+.btn-submit { padding: 15px; background: var(--primary); color: white; border: none; border-radius: 10px; cursor: pointer; font-weight: bold; }
 
-/* Review List */
-.review-scroll { max-height: 250px; overflow-y: auto; border: 1px solid #eee; border-radius: 10px; margin-top: 10px; }
-.review-item { padding: 10px; border-bottom: 1px solid #eee; text-align: left; }
+/* Result & Review */
+.score-card { text-align: center; background: #f8f9fa; padding: 20px; border-radius: 20px; margin-bottom: 20px; }
+.score-value { font-size: 48px; font-weight: bold; color: var(--primary); }
+.review-scroll { max-height: 250px; overflow-y: auto; border: 1px solid #eee; border-radius: 10px; margin-bottom: 20px; }
+.review-item { padding: 15px; border-bottom: 1px solid #eee; }
+.btn-home { width: 100%; padding: 15px; background: var(--text); color: white; border: none; border-radius: 12px; cursor: pointer; }
 
-.choice-grid { 
-    display: grid; 
-    grid-template-columns: repeat(4, 1fr); /* Ubah jadi 4 kolom */
-    gap: 8px; 
-    margin-bottom: 20px; 
-}
+/* Flashcard Specific */
+.fc-container { perspective: 1000px; height: 300px; margin: 20px 0; cursor: pointer; }
+.fc-card { width: 100%; height: 100%; position: relative; transition: transform 0.6s; transform-style: preserve-3d; }
+.fc-card.flipped { transform: rotateY(180deg); }
+.fc-front, .fc-back { position: absolute; width: 100%; height: 100%; backface-visibility: hidden; display: flex; flex-direction: column; justify-content: center; align-items: center; border-radius: 20px; border: 2px solid #eee; background: white; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+.fc-front { font-size: 20px; color: var(--text); }
+.fc-back { transform: rotateY(180deg); text-align: center; padding: 20px; }
 
-/* Toggle Switch CSS */
+/* Toggle Switch */
 .switch { position: relative; width: 40px; height: 20px; }
 .switch input { opacity: 0; width: 0; height: 0; }
 .slider { position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0; background-color: #ccc; transition: .4s; border-radius: 20px; }

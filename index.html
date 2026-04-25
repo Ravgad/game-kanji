@@ -26,6 +26,10 @@
                 <span class="icon">📝</span>
                 <div class="text"><b>Menu Ujian</b><br><small>Stage Challenge</small></div>
             </button>
+            <button class="btn-main" onclick="startFlashcards()">
+                <span class="icon">🗂️</span>
+                <div class="text"><b>Menu Flashcard</b><br><small>Hafalan Cepat</small></div>
+            </button>
         </div>
     </div>
 
@@ -55,6 +59,39 @@
         <button class="btn-start" onclick="startQuiz()">MULAI ▶</button>
     </div>
 
+    <div id="screen-flashcard" class="screen hidden">
+        <div class="header">
+            <span id="fc-counter">1/0</span>
+            <div style="display: flex; gap: 10px;">
+                <button class="btn-choice" onclick="toggleEditFC()" style="padding: 5px 10px;">Edit ✎</button>
+                <button class="btn-quit" onclick="showScreen('main-menu')" style="position: static;">✕</button>
+            </div>
+        </div>
+
+        <div class="fc-container" onclick="flipCard()">
+            <div class="fc-card" id="fc-card">
+                <div class="fc-front" id="fc-front-text">Kanji</div>
+                <div class="fc-back">
+                    <div id="fc-back-furi" style="font-size: 24px; margin-bottom: 10px;">Furigana</div>
+                    <hr style="width: 80%; border: 0; border-top: 1px solid #eee;">
+                    <div id="fc-back-arti" style="font-size: 20px; color: var(--primary); margin-top: 10px;">Arti</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="fc-edit-form" class="hidden" style="background: #f1f2f6; padding: 15px; border-radius: 15px; margin-bottom: 20px;">
+            <input type="text" id="edit-kanji" placeholder="Kanji" style="width: 100%; margin-bottom: 10px; padding: 8px; border: 1px solid #ddd; border-radius: 5px;">
+            <input type="text" id="edit-furi" placeholder="Furigana" style="width: 100%; margin-bottom: 10px; padding: 8px; border: 1px solid #ddd; border-radius: 5px;">
+            <input type="text" id="edit-arti" placeholder="Arti" style="width: 100%; margin-bottom: 10px; padding: 8px; border: 1px solid #ddd; border-radius: 5px;">
+            <button class="btn-start" onclick="saveFCEdit()" style="padding: 10px;">Simpan ✅</button>
+        </div>
+
+        <div class="choice-grid" style="grid-template-columns: 1fr 1fr;">
+            <button class="btn-choice" onclick="prevFC()">◀ Back</button>
+            <button class="btn-choice" onclick="nextFC()">Next ▶</button>
+        </div>
+    </div>
+
     <div id="screen-quiz" class="screen hidden">
         <div class="header">
             <button class="btn-quit" onclick="quitQuiz()">✕</button>
@@ -62,7 +99,7 @@
             <span id="q-count">0/0</span>
         </div>
         <div class="kanji-display" id="current-question"></div>
-        <p id="kanji-meaning"></p>
+        <p id="kanji-meaning" style="text-align: center; color: #666;"></p>
         <div class="answer-box" id="user-answer"></div>
         <div class="keyboard">
             <div class="kb-tabs">
