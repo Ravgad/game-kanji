@@ -1,289 +1,65 @@
 stage,soal,jawaban,arti
-, 上, うえ, atas
-, 上げる, あげる, menaikkan
-, 上がる, あがる, naik
-, 上手な, じょうずな, mahir
-, 下, した, bawah
-, 靴下, くつした, kaus kaki
-, 下がる, さがる, turun
-, 待ってください, まってください, tolong tunggu
-, 下手な, へたな, tidak mahir
-, 廊下, ろうか, lorong
-, 下宿する, げしゅくする, tinggal/kos
-, 中, なか, dalam
-, 背中, せなか, punggung
-, 一日中, いちにちじゅう, sepanjang hari
-, 電話中, でんわちゅう, sedang telepon
-, 途中, とちゅう, di tengah jalan
-, 大きい, おおきい, besar
-, 大勢, おおぜい, banyak orang
-, 大人, おとな, orang dewasa
-, 大学, だいがく, universitas
-, 大丈夫な, だいじょうぶな, tidak apa-apa
-, 大切な, たいせつな, penting
-, 太い, ふとい, gemuk/tebal
-, 太る, ふとる, menjadi gemuk
-, 太陽, たいよう, matahari
-, 太平洋, たいへいよう, samudra pasifik
-, 小さい, ちいさい, kecil
-, 小鳥, ことり, burung kecil
-, 小切手, こぎって, cek
-, 小学校, しょうがっこう, sekolah dasar
-, 少し, すこし, sedikit
-, 少ない, すくない, sedikit (jumlah)
-, 少年, しょうねん, anak laki-laki
-, 少女, しょうじょ, anak perempuan
-, 多少, たしょう, agak/banyak sedikit
-, 入る, はいる, masuk
-, 入れる, いれる, memasukkan
-, 入り口, いりぐち, pintu masuk
-, 入学する, にゅうがくする, masuk sekolah
-, 輸入する, ゆにゅうする, impor
-, 出る, でる, keluar
-, 出口, でぐち, pintu keluar
-, 出す, だす, mengeluarkan
-, 思い出す, おもいだす, mengingat
-, 輸出する, ゆしゅつする, ekspor
-, 子供, こども, anak-anak
-, 男の子, おとこのこ, anak laki-laki
-, 女の子, おんなのこ, anak perempuan
-, お子さん, おこさん, anak (orang lain)
-, 帽子, ぼうし, topi
-, 学生, がくせい, pelajar
-, 大学, だいがく, universitas
-, 留学生, りゅうがくせい, pelajar asing
-, 学部, がくぶ, fakultas
-, 数学, すうがく, matematika
-, 学校, がっこう, sekolah
-, 四つ, よっつ, empat (benda)
-, 四日, よっか, tanggal 4
-, 四, よん/し, empat
-, 四年, よねん, 4 tahun
-, 四月, しがつ, April
-, 五つ, いつつ, lima (benda)
-, 五日, いつか, tanggal 5
-, 五, ご, lima
-, 五月, ごがつ, Mei
-, 五年, ごねん, 5 tahun
-, 六つ, むっつ, enam (benda)
-, 六日, むいか, tanggal 6
-, 六月, ろくがつ, Juni
-, 六年, ろくねん, 6 tahun
-, 六分, ろっぷん, 6 menit
-, 七つ, ななつ, tujuh (benda)
-, 七日, なのか, tanggal 7
-, 七, なな/しち, tujuh
-, 七月, しちがつ, Juli
-, 七年, ななねん, 7 tahun
-, 八つ, やっつ, delapan (benda)
-, 八日, ようか, tanggal 8
-, 八月, はちがつ, Agustus
-, 八年, はちねん, 8 tahun
-, 八分, はっぷん, 8 menit
-, 九つ, ここのつ, sembilan (benda)
-, 九日, ここのか, tanggal 9
-, 九, きゅう/く, sembilan
-, 九年, きゅうねん, 9 tahun
-, 九月, くがつ, September
-, 十, とお, sepuluh
-, 十日, とおか, tanggal 10
-, 十月, じゅうがつ, Oktober
-, 十分な, じゅうぶんな, cukup
-, 十分, じゅっぷん, 10 menit
-, 二十日, はつか, tanggal 20
-, 二十歳, はたち, 20 tahun (umur)
-, 古い, ふるい, tua (barang)
-, 中古車, ちゅうこしゃ, mobil bekas
-2, 上, うえ, atas
-2, 上げる, あげる, menaikkan
-2, 上がる, あがる, naik
-2, 上手な, じょうずな, mahir
-2, 下, した, bawah
-2, 下がる, さがる, turun
-2, 待ってください, まってください, tolong tunggu
-2, 下手な, へたな, tidak mahir
-2, 下宿する, げしゅくする, tinggal/kos
-2, 中, なか, dalam
-2, 背中, せなか, punggung
-2, 一日中, いちにちじゅう, sepanjang hari
-2, 大きい, おおきい, besar
-2, 大人, おとな, orang dewasa
-2, 大学, だいがく, universitas
-2, 大丈夫な, だいじょうぶな, tidak apa-apa
-2, 大切な, たいせつな, penting
-2, 太い, ふとい, gemuk/tebal
-2, 太る, ふとる, menjadi gemuk
-2, 太平洋, たいへいよう, samudra pasifik
-2, 小さい, ちいさい, kecil
-2, 少し, すこし, sedikit
-2, 少ない, すくない, sedikit (jumlah)
-3, 入る, はいる, masuk
-3, 入れる, いれる, memasukkan
-3, 入り口, いりぐち, pintu masuk
-3, 出る, でる, keluar
-3, 出口, でぐち, pintu keluar
-3, 出す, だす, mengeluarkan
-3, 子供, こども, anak-anak
-3, 男の子, おとこのこ, anak laki-laki
-3, 女の子, おんなのこ, anak perempuan
-3, お子さん, おこさん, anak (orang lain)
-3, 帽子, ぼうし, topi
-3, 学生, がくせい, pelajar
-3, 大学, だいがく, universitas
-3, 学校, がっこう, sekolah
-3, 四つ, よっつ, empat (benda)
-3, 四日, よっか, tanggal 4
-3, 四, よん/し, empat
-3, 四年, よねん, 4 tahun
-3, 四月, しがつ, April
-3, 五つ, いつつ, lima (benda)
-3, 五日, いつか, tanggal 5
-3, 五, ご, lima
-3, 五月, ごがつ, Mei
-3, 五年, ごねん, 5 tahun
-3, 六つ, むっつ, enam (benda)
-3, 六日, むいか, tanggal 6
-3, 六月, ろくがつ, Juni
-3, 六年, ろくねん, 6 tahun
-3, 六分, ろっぷん, 6 menit
-3, 七つ, ななつ, tujuh (benda)
-3, 七日, なのか, tanggal 7
-3, 七, なな/しち, tujuh
-3, 七月, しちがつ, Juli
-3, 七年, ななねん, 7 tahun
-3, 八つ, やっつ, delapan (benda)
-3, 八日, ようか, tanggal 8
-3, 八月, はちがつ, Agustus
-3, 八年, はちねん, 8 tahun
-3, 八分, はっぷん, 8 menit
-3, 九つ, ここのつ, sembilan (benda)
-3, 九日, ここのか, tanggal 9
-3, 九, きゅう/く, sembilan
-3, 九年, きゅうねん, 9 tahun
-3, 九月, くがつ, September
-3, 十, とお, sepuluh
-3, 十日, とおか, tanggal 10
-3, 十月, じゅうがつ, Oktober
-3, 十分な, じゅうぶんな, cukup
-3, 十分, じゅっぷん, 10 menit
-3, 二十日, はつか, tanggal 20
-3, 二十歳, はたち, 20 tahun (umur)
-3, 古い, ふるい, tua (barang)
-4, 四つ, よっつ, empat (benda)
-4, 四日, よっか, tanggal 4
-4, 四, よん/し, empat
-4, 四年, よねん, 4 tahun
-4, 四月, しがつ, April
-4, 五つ, いつつ, lima (benda)
-4, 五日, いつか, tanggal 5
-4, 五, ご, lima
-4, 五月, ごがつ, Mei
-4, 五年, ごねん, 5 tahun
-4, 六つ, むっつ, enam (benda)
-4, 六日, むいか, tanggal 6
-4, 六月, ろくがつ, Juni
-4, 六年, ろくねん, 6 tahun
-4, 六分, ろっぷん, 6 menit
-4, 七つ, ななつ, tujuh (benda)
-4, 七日, なのか, tanggal 7
-4, 七, なな/しち, tujuh
-4, 七月, しちがつ, Juli
-4, 七年, ななねん, 7 tahun
-4, 八つ, やっつ, delapan (benda)
-4, 八日, ようか, tanggal 8
-4, 八月, はちがつ, Agustus
-4, 八年, はちねん, 8 tahun
-4, 八分, はっぷん, 8 menit
-4, 九つ, ここのつ, sembilan (benda)
-4, 九日, ここのか, tanggal 9
-4, 九, きゅう/く, sembilan
-4, 九年, きゅうねん, 9 tahun
-4, 九月, くがつ, September
-4, 十, とお, sepuluh
-4, 十日, とおか, tanggal 10
-4, 十月, じゅうがつ, Oktober
-4, 十分な, じゅうぶんな, cukup
-4, 十分, じゅっぷん, 10 menit
-4, 二十日, はつか, tanggal 20
-4, 二十歳, はたち, 20 tahun (umur)
-4, 古い, ふるい, tua (barang)
-1, 百, ひゃく, seratus
-1, 三百, さんびゃく, tiga ratus
-1, 六百, ろっぴゃく, enam ratus
-1, 八百, はっぴゃく, delapan ratus
-1, 八百屋, やおや, toko sayur
-1, 千, せん, seribu
-1, 千円, せんえん, seribu yen
-1, 三千, さんぜん, tiga ribu
-1, 万, まん, sepuluh ribu
-1, 百万円, ひゃくまんえん, satu juta yen
-1, 円い, まるい, bulat
-1, 円, えん, yen / lingkaran
-1, 千円, せんえん, seribu yen
-1, 三千円, さんぜんえん, tiga ribu yen
-1, 一万円, いちまんえん, sepuluh ribu yen
-1, 円高, えんだか, yen menguat
-1, 日, ひ, hari / matahari
-1, 木曜日, もくようび, hari Kamis
-1, 二日, ふつか, dua hari / tanggal 2
-1, 毎日, まいにち, setiap hari
-1, 日記, にっき, buku harian
-1, 日本, にほん, Jepang
-1, 今日, きょう, hari ini
-1, 昨日, きのう, kemarin
-1, 明日, あした, besok
-1, 明日, あす, besok
-1, 月, つき, bulan / bulan (langit)
-1, 一月, いちがつ, Januari
-1, 月曜日, げつようび, hari Senin
-1, 今月, こんげつ, bulan ini
-1, 先月, せんげつ, bulan lalu
-1, 来月, らいげつ, bulan depan
-1, 再来月, さらいげつ, dua bulan lagi
-1, 一ヶ月, いっかげつ, satu bulan
-1, 明るい, あかるい, terang
-1, 明日, あした, besok
-1, 明日, あす, besok
-1, 立つ, たつ, berdiri
-1, 立てる, たてる, mendirikan
-1, 音, おと, suara
-1, 音楽, おんがく, musik
-1, 暗い, くらい, gelap
-1, 暗室, あんしつ, ruang gelap
-1, 火, ひ, api
-1, 火曜日, かようび, hari Selasa
-1, 花火, はなび, kembang api
-1, 火事, かじ, kebakaran
-1, 水, みず, air
-1, 水曜日, すいようび, hari Rabu
-1, 水道, すいどう, air ledeng
-1, 水泳, すいえい, berenang
-1, 土, つち, tanah
-1, 土曜日, どようび, hari Sabtu
-1, 土地, とち, tanah / lahan
-1, お土産, おみやげ, oleh-oleh
-1, 国, くに, negara
-1, 外国, がいこく, luar negeri
-1, 外国人, がいこくじん, orang asing
-1, 全部, ぜんぶ, semua
-1, 全然, ぜんぜん, sama sekali tidak
-1, 全員, ぜんいん, semua orang
-1, 金, きん, emas / uang
-1, お金, おかね, uang
-1, お金持ち, おかねもち, orang kaya
-1, 金曜日, きんようび, hari Jumat
-1, 工, こう, konstruksi / teknik
-1, 工場, こうじょう, pabrik
-1, 工業, こうぎょう, industri
-1, 左, ひだり, kiri
-1, 左手, ひだりて, tangan kiri
-1, 左側, ひだりがわ, sisi kiri
-1, 左利き, ひだりきき, kidal
-1, 右, みぎ, kanan
-1, 右手, みぎて, tangan kanan
-1, 右側, みぎがわ, sisi kanan
-1, 左右, さゆう, kiri dan kanan
-1, 友, とも, teman
-1, 友達, ともだち, teman
-1, 友人, ゆうじん, sahabat
-1, 親友, しんゆう, sahabat dekat
+2,何,なに/なん,apa
+2,何人,なにじん,kebangsaan apa
+2,何人,なんにん,berapa orang
+2,何年,なんねん,berapa tahun
+2,何時,なんじ,jam berapa
+2,手,て,tangan
+2,手紙,てがみ,surat
+2,手伝う,てつだう,membantu
+2,上手な,じょうずな,pandai
+2,下手な,へたな,tidak pandai
+2,切る,きる,memotong
+2,切手,きって,perangko
+2,切符,きっぷ,tiket
+2,大切な,たいせつな,penting
+2,分かる,わかる,mengerti
+2,分ける,わける,membagi
+2,五分,ごふん,5 menit
+2,二十分,にじゅっぷん,20 menit
+2,半分,はんぶん,setengah
+2,十分な,じゅうぶんな,cukup
+2,今,いま,sekarang
+2,今晩,こんばん,malam ini
+2,今年,ことし,tahun ini
+2,今朝,けさ,tadi pagi
+2,今日,きょう,hari ini
+2,半分,はんぶん,setengah
+2,三時半,さんじはん,jam 3:30
+2,半年,はんとし,setengah tahun
+2,前半,ぜんはん,paruh pertama
+2,後半,こうはん,paruh kedua
+2,止まる,とまる,berhenti
+2,止める,とめる,menghentikan
+2,正しい,ただしい,benar
+2,お正月,おしょうがつ,tahun baru
+2,歩く,あるく,berjalan
+2,足,あし,kaki
+2,足す,たす,menambah
+2,足りる,たりる,cukup
+2,不足する,ふそくする,kekurangan
+2,走る,はしる,berlari
+2,走者,そうしゃ,pelari
+2,起きる,おきる,bangun
+2,起こす,おこす,membangunkan
+2,夕方,ゆうがた,sore
+2,夕飯,ゆうはん,makan malam
+2,夕食,ゆうしょく,makan malam
+2,外,そと,luar
+2,外の,ほかの,yang lain
+2,海外,かいがい,luar negeri
+2,外出する,がいしゅつする,keluar
+2,多い,おおい,banyak
+2,多分,たぶん,mungkin
+2,名前,なまえ,nama
+2,有名な,ゆうめいな,terkenal
+2,夜,よる,malam
+2,今夜,こんや,malam ini
+2,夜食,やしょく,cemilan malam
+2,生まれる,うまれる,lahir
+2,生きる,いきる,hidup
+2,大学生,だいがくせい,mahasiswa
+2,先生,せんせい,guru
+2,生徒,せいと,siswa
+2,生活する,せいかつする,hidup
+2,誕生日,たんじょうび,ulang tahun
