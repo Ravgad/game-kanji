@@ -1,84 +1,504 @@
 kanji,furigana,arti
-何,なに/なん,apa
-何人,なにじん,kebangsaan apa
-何人,なんにん,berapa orang
-何年,なんねん,berapa tahun
-何時,なんじ,jam berapa
-手,て,tangan
-手紙,てがみ,surat
-手伝う,てつだう,membantu
-手袋,てぶくろ,sarung tangan
-運転手,うんてんしゅ,sopir
-上手な,じょうずな,pandai
-下手な,へたな,tidak pandai
-切る,きる,memotong
-切手,きって,perangko
-切符,きっぷ,tiket
-大切な,たいせつな,penting
-親切な,しんせつな,baik hati
-分かる,わかる,mengerti
-分ける,わける,membagi
-五分,ごふん,5 menit
-二十分,にじゅっぷん,20 menit
-半分,はんぶん,setengah
-十分な,じゅうぶんな,cukup
-今,いま,sekarang
-今晩,こんばん,malam ini
-今年,ことし,tahun ini
-今朝,けさ,tadi pagi
-今日,きょう,hari ini
-半分,はんぶん,setengah
-三時半,さんじはん,jam 3:30
-半年,はんとし,setengah tahun
-前半,ぜんはん,paruh pertama
-後半,こうはん,paruh kedua
-止まる,とまる,berhenti
-止める,とめる,menghentikan
-通行止め,つうこうどめ,dilarang lewat
-中止する,ちゅうしする,membatalkan
-正しい,ただしい,benar
-お正月,おしょうがつ,tahun baru
-正確な,せいかくな,akurat
-歩く,あるく,berjalan
-歩道,ほどう,trotoar
-歩行者,ほこうしゃ,pejalan kaki
-散歩する,さんぽする,jalan-jalan
-足,あし,kaki
-足す,たす,menambah
-足りる,たりる,cukup
-二足,にそく,dua pasang
-不足する,ふそくする,kekurangan
-走る,はしる,berlari
-走者,そうしゃ,pelari
-起きる,おきる,bangun
-早起きする,はやおきする,bangun cepat
-起こす,おこす,membangunkan
-夕方,ゆうがた,sore
-夕飯,ゆうはん,makan malam
-夕食,ゆうしょく,makan malam
-外,そと,luar
-外の,ほかの,yang lain
-海外,かいがい,luar negeri
-郊外,こうがい,pinggiran kota
-外出する,がいしゅつする,keluar
-時間外,じかんがい,di luar waktu
-多い,おおい,banyak
-多分,たぶん,mungkin
-多数,たすう,banyak (jumlah)
-多少,たしょう,sedikit/banyak
-名前,なまえ,nama
-有名な,ゆうめいな,terkenal
-名所,めいしょ,tempat terkenal
-名物,めいぶつ,ciri khas
-名字,みょうじ,nama keluarga
-夜,よる,malam
-今夜,こんや,malam ini
-夜食,やしょく,cemilan malam
-生まれる,うまれる,lahir
-生きる,いきる,hidup
-大学生,だいがくせい,mahasiswa
-先生,せんせい,guru
-生徒,せいと,siswa
-生活する,せいかつする,hidup
-誕生日,たんじょうび,ulang tahun
-一生懸命,いっしょうけんめい,dengan sungguh-sungguh
+世界,せかい,Dunia
+文化,ぶんか,Budaya
+社会,しゃかい,Masyarakat
+経験,けいけん,Pengalaman
+説明,せつめい,Penjelasan
+連絡,れんらく,Kontak
+確認,かくにん,Konfirmasi
+計画,けいかく,Rencana
+準備,じゅんび,Persiapan
+結果,けっか,Hasil
+理由,りゆう,Alasan
+方法,ほうほう,Metode
+環境,かんきょう,Lingkungan
+経済,けいざい,Ekonomi
+技術,ぎじゅつ,Teknologi
+管理,かんり,Manajemen
+制度,せいど,Sistem
+関係,かんけい,Hubungan
+現実,げんじつ,Kenyataan
+将来,しょうらい,Masa Depan
+現在,げんざい,Sekarang
+過去,かこ,Masa Lalu
+必要,ひつよう,Perlu
+重要,じゅうよう,Penting
+大切,たいせつ,Berharga
+普通,ふつう,Biasa
+特別,とくべつ,Khusus
+最近,さいきん,Akhir-akhir Ini
+最初,さいしょ,Pertama
+最後,さいご,Terakhir
+途中,とちゅう,Di Tengah Jalan
+状態,じょうたい,Kondisi
+状況,じょうきょう,Keadaan
+変化,へんか,Perubahan
+増加,ぞうか,Peningkatan
+減少,げんしょう,Penurunan
+発展,はってん,Perkembangan
+成長,せいちょう,Pertumbuhan
+成功,せいこう,Keberhasilan
+失敗,しっぱい,Kegagalan
+努力,どりょく,Usaha
+挑戦,ちょうせん,Tantangan
+選択,せんたく,Pilihan
+決定,けってい,Keputusan
+判断,はんだん,Penilaian
+理解,りかい,Pemahaman
+解決,かいけつ,Penyelesaian
+調査,ちょうさ,Penelitian
+報告,ほうこく,Laporan
+比較,ひかく,Perbandingan
+内容,ないよう,Isi
+意味,いみ,Makna
+価値,かち,Nilai
+意見,いけん,Pendapat
+感情,かんじょう,Perasaan
+行動,こうどう,Tindakan
+責任,せきにん,Tanggung Jawab
+義務,ぎむ,Kewajiban
+権利,けんり,Hak
+自由,じゆう,Kebebasan
+平等,びょうどう,Kesetaraan
+協力,きょうりょく,Kerja Sama
+競争,きょうそう,Persaingan
+交流,こうりゅう,Pertukaran
+支援,しえん,Dukungan
+援助,えんじょ,Bantuan
+保護,ほご,Perlindungan
+安全,あんぜん,Keamanan
+危険,きけん,Bahaya
+健康,けんこう,Kesehatan
+生活,せいかつ,Kehidupan
+習慣,しゅうかん,Kebiasaan
+自然,しぜん,Alam
+資源,しげん,Sumber Daya
+消費,しょうひ,Konsumsi
+生産,せいさん,Produksi
+販売,はんばい,Penjualan
+価格,かかく,Harga
+市場,しじょう,Pasar
+収入,しゅうにゅう,Pendapatan
+支出,ししゅつ,Pengeluaran
+利益,りえき,Keuntungan
+損失,そんしつ,Kerugian
+人口,じんこう,Populasi
+都市,とし,Kota
+地域,ちいき,Wilayah
+国家,こっか,Negara
+政府,せいふ,Pemerintah
+政策,せいさく,Kebijakan
+経営,けいえい,Manajemen Bisnis
+運営,うんえい,Operasional
+伝統,でんとう,Tradisi
+歴史,れきし,Sejarah
+宗教,しゅうきょう,Agama
+目的,もくてき,Tujuan
+原因,げんいん,Penyebab
+手段,しゅだん,Sarana
+機能,きのう,Fungsi
+特徴,とくちょう,Ciri Khas
+案内,あんない,Panduan
+受付,うけつけ,Resepsionis
+運転,うんてん,Mengemudi
+往復,おうふく,Pulang-pergi
+会議,かいぎ,Rapat
+会話,かいわ,Percakapan
+解答,かいとう,Jawaban
+活動,かつどう,Aktivitas
+課題,かだい,Tugas
+家庭,かてい,Rumah tangga
+可能,かのう,Memungkinkan
+記録,きろく,Catatan
+客観,きゃっかん,Objektif
+教育,きょういく,Pendidikan
+共通,きょうつう,Umum
+協会,きょうかい,Asosiasi
+緊張,きんちょう,Tegang
+空港,くうこう,Bandara
+訓練,くんれん,Latihan
+警察,けいさつ,Polisi
+景色,けしき,Pemandangan
+建設,けんせつ,Konstruksi
+研究,けんきゅう,Penelitian
+見物,けんぶつ,Tamasya
+交通,こうつう,Transportasi
+工場,こうじょう,Pabrik
+行事,ぎょうじ,Acara
+国民,こくみん,Warga negara
+国際,こくさい,Internasional
+細胞,さいぼう,Sel
+作業,さぎょう,Pekerjaan
+作品,さくひん,Karya
+作家,さっか,Pengarang
+産業,さんぎょう,Industri
+資料,しりょう,Data
+試験,しけん,Ujian
+事件,じけん,Kasus
+実現,じつげん,Mewujudkan
+実際,じっさい,Sebenarnya
+実力,じつりょく,Kemampuan
+社員,しゃいん,Karyawan
+住宅,じゅうたく,Perumahan
+集中,しゅうちゅう,Konsentrasi
+出席,しゅっせき,Kehadiran
+出発,しゅっぱつ,Keberangkatan
+使用,しよう,Penggunaan
+商品,しょうひん,Produk
+消失,しょうしつ,Hilang
+証拠,しょうこ,Bukti
+情報化,じょうほうか,Digitalisasi
+職業,しょくぎょう,Profesi
+食品,しょくひん,Bahan makanan
+信号,しんごう,Lampu lalu lintas
+信頼,しんらい,Kepercayaan
+心理,しんり,Psikologi
+水準,すいじゅん,Tingkat
+数学,すうがく,Matematika
+性格,せいかく,Kepribadian
+生命,せいめい,Kehidupan
+責任者,せきにんしゃ,Penanggung jawab
+設備,せつび,Fasilitas
+専門,せんもん,Spesialisasi
+戦争,せんそう,Perang
+相談,そうだん,Konsultasi
+存在感,そんざいかん,Kehadiran
+大学,だいがく,Universitas
+代表,だいひょう,Perwakilan
+大会,たいかい,Turnamen
+対象,たいしょう,Target
+態度,たいど,Sikap
+担当,たんとう,Penanggung jawab
+誕生,たんじょう,Kelahiran
+地域社会,ちいきしゃかい,Masyarakat lokal
+地球,ちきゅう,Bumi
+知事,ちじ,Gubernur
+知能,ちのう,Kecerdasan
+駐車場,ちゅうしゃじょう,Tempat parkir
+直接,ちょくせつ,Langsung
+通信,つうしん,Komunikasi
+提案書,ていあんしょ,Dokumen usulan
+天候,てんこう,Cuaca
+電力,でんりょく,Listrik
+登場,とうじょう,Kemunculan
+投票,とうひょう,Pemungutan suara
+到着,とうちゃく,Kedatangan
+動物園,どうぶつえん,Kebun binatang
+独立,どくりつ,Kemerdekaan
+内容量,ないようりょう,Isi bersih
+能力,のうりょく,Kemampuan
+農業,のうぎょう,Pertanian
+発見,はっけん,Penemuan
+発明,はつめい,Penemuan/Inovasi
+判断力,はんだんりょく,Kemampuan menilai
+反対,はんたい,Menentang
+費用,ひよう,Biaya
+品質,ひんしつ,Kualitas
+夫婦,ふうふ,Suami istri
+復習,ふくしゅう,Mengulang pelajaran
+文章,ぶんしょう,Tulisan
+訪問,ほうもん,Kunjungan
+貿易,ぼうえき,Perdagangan internasional
+割合,わりあい,Persentase
+場合,ばあい,Kasus
+場面,ばめん,Adegan/Situasi
+方向,ほうこう,Arah
+方針,ほうしん,Kebijakan
+部分,ぶぶん,Bagian
+範囲,はんい,Cakupan
+番号,ばんごう,Nomor
+発達,はったつ,Perkembangan
+発表会,はっぴょうかい,Pertunjukan
+表情,ひょうじょう,Ekspresi wajah
+評価,ひょうか,Evaluasi
+表現,ひょうげん,Ekspresi
+不安,ふあん,Khawatir
+不満,ふまん,Tidak puas
+負担,ふたん,Beban
+不足,ふそく,Kekurangan
+部品,ぶひん,Suku cadang
+平均,へいきん,Rata-rata
+変更,へんこう,Perubahan
+返事,へんじ,Balasan
+豊富,ほうふ,Kaya/Berlimpah
+訪問者,ほうもんしゃ,Pengunjung
+保存,ほぞん,Penyimpanan
+保証,ほしょう,Jaminan
+本当,ほんとう,Sebenarnya
+未来,みらい,Masa depan
+魅力,みりょく,Daya tarik
+無理,むり,Tidak mungkin
+無料,むりょう,Gratis
+目的地,もくてきち,Tujuan akhir
+役所,やくしょ,Kantor pemerintahan
+役目,やくめ,Peran/Tugas
+有効,ゆうこう,Efektif
+有利,ゆうり,Menguntungkan
+輸出,ゆしゅつ,Ekspor
+輸入,ゆにゅう,Impor
+要求,ようきゅう,Tuntutan
+様子,ようす,Keadaan
+予定,よてい,Rencana
+予想,よそう,Prediksi
+予算,よさん,Anggaran
+予約,よやく,Reservasi
+留学,りゅうがく,Belajar di luar negeri
+留守,るす,Tidak di rumah
+例外,れいがい,Pengecualian
+歴代,れきだい,Berturut-turut
+労働,ろうどう,Pekerjaan/Buruh
+話題,わだい,Topik
+割合的,わりあいてき,Secara proporsional
+温度,おんど,Suhu
+温泉,おんせん,Mata air panas
+音声,おんせい,Suara
+会場,かいじょう,Tempat acara
+解説,かいせつ,Penjelasan
+確率,かくりつ,Probabilitas
+学習,がくしゅう,Pembelajaran
+活用,かつよう,Pemanfaatan
+観光,かんこう,Pariwisata
+観察,かんさつ,Pengamatan
+感想,かんそう,Kesan
+感謝,かんしゃ,Rasa terima kasih
+記憶,きおく,Ingatan
+機会,きかい,Kesempatan
+気候,きこう,Iklim
+期待,きたい,Harapan
+記者,きしゃ,Wartawan
+規模,きぼ,Skala
+休日,きゅうじつ,Hari libur
+競技,きょうぎ,Pertandingan
+興味,きょうみ,Minat
+近所,きんじょ,Lingkungan sekitar
+苦労,くろう,Kesulitan
+経由,けいゆ,Melalui
+欠席,けっせき,Tidak hadir
+現金,げんきん,Uang tunai
+現代,げんだい,Zaman modern
+効果,こうか,Efek
+工夫,くふう,Kreativitas
+交通費,こうつうひ,Biaya transportasi
+広告,こうこく,Iklan
+講義,こうぎ,Kuliah
+故障,こしょう,Kerusakan
+国語,こくご,Bahasa nasional
+混雑,こんざつ,Kepadatan
+材料,ざいりょう,Bahan
+財布,さいふ,Dompet
+採用,さいよう,Perekrutan
+作戦,さくせん,Strategi
+残業,ざんぎょう,Lembur
+市場調査,しじょうちょうさ,Riset pasar
+支店,してん,Cabang
+実験,じっけん,Eksperimen
+実施,じっし,Pelaksanaan
+質問,しつもん,Pertanyaan
+実用,じつよう,Praktis
+首都,しゅと,Ibu kota
+順番,じゅんばん,Urutan
+消極的,しょうきょくてき,Pasif
+成績,せいせき,Nilai akademik
+積極的,せっきょくてき,Aktif
+接続,せつぞく,Koneksi
+握手,あくしゅ,Jabat tangan
+印象,いんしょう,Kesan
+引用,いんよう,Kutipan
+宇宙,うちゅう,Alam semesta
+営業,えいぎょう,Bisnis
+演技,えんぎ,Akting
+応援,おうえん,Dukungan
+応募,おうぼ,Lamaran
+解消,かいしょう,Penyelesaian
+改良,かいりょう,Perbaikan
+確保,かくほ,Mengamankan
+活躍,かつやく,Aktif berprestasi
+活発,かっぱつ,Aktif
+歓迎,かんげい,Sambutan
+観客,かんきゃく,Penonton
+企業,きぎょう,Perusahaan
+帰国,きこく,Pulang ke negara asal
+寄付,きふ,Donasi
+義理,ぎり,Kewajiban moral
+禁止,きんし,Larangan
+偶然,ぐうぜん,Kebetulan
+敬語,けいご,Bahasa hormat
+契約,けいやく,Kontrak
+結局,けっきょく,Pada akhirnya
+健康的,けんこうてき,Sehat
+現場,げんば,Lokasi kerja
+候補,こうほ,Calon
+行列,ぎょうれつ,Antrean
+高速,こうそく,Kecepatan tinggi
+貢献,こうけん,Kontribusi
+国籍,こくせき,Kewarganegaraan
+骨折,こっせつ,Patah tulang
+混乱,こんらん,Kekacauan
+再会,さいかい,Bertemu kembali
+再生,さいせい,Pemulihan
+作曲,さっきょく,Komposisi musik
+撮影,さつえい,Pemotretan
+参考,さんこう,Referensi
+賛成,さんせい,Setuju
+資格,しかく,Kualifikasi
+刺激,しげき,Stimulasi
+支給,しきゅう,Pemberian
+自然体,しぜんたい,Alami
+失業,しつぎょう,Pengangguran
+実感,じっかん,Perasaan nyata
+実績,じっせき,Pencapaian
+指導者,しどうしゃ,Pemimpin
+支配,しはい,Kendali
+死亡,しぼう,Kematian
+締切,しめきり,Batas waktu
+就職,しゅうしょく,Mendapat pekerjaan
+修理,しゅうり,Perbaikan
+受験,じゅけん,Mengikuti ujian
+受賞,じゅしょう,Menerima penghargaan
+出場,しゅつじょう,Ikut serta
+順調,じゅんちょう,Lancar
+省略,しょうりゃく,Singkatan
+証明書,しょうめいしょ,Sertifikat
+所属,しょぞく,Afiliasi
+新鮮,しんせん,Segar
+信仰,しんこう,Kepercayaan
+人数,にんずう,Jumlah orang
+推薦,すいせん,Rekomendasi
+睡眠,すいみん,Tidur
+清潔,せいけつ,Bersih
+責任感,せきにんかん,Rasa tanggung jawab
+接近,せっきん,Mendekat
+説得,せっとく,Membujuk
+宣伝,せんでん,Promosi
+選手,せんしゅ,Atlet
+想像,そうぞう,Imajinasi
+騒音,そうおん,Kebisingan
+存在,そんざい,Keberadaan
+卒業,そつぎょう,Lulus
+逮捕,たいほ,Penangkapan
+体験,たいけん,Pengalaman langsung
+大会場,だいかいじょう,Tempat acara besar
+担当者,たんとうしゃ,Petugas
+単純,たんじゅん,Sederhana
+注意点,ちゅういてん,Hal yang perlu diperhatikan
+調整中,ちょうせいちゅう,Sedang disesuaikan
+追求,ついきゅう,Mengejar
+提案,ていあん,Usulan
+適切,てきせつ,Tepat
+徹底,てってい,Menyeluruh
+転勤,てんきん,Mutasi kerja
+展覧会,てんらんかい,Pameran
+統計,とうけい,Statistik
+登録,とうろく,Pendaftaran
+特徴的,とくちょうてき,Khas
+努力家,どりょくか,Pekerja keras
+入学,にゅうがく,Masuk sekolah
+認定,にんてい,Sertifikasi
+農産物,のうさんぶつ,Hasil pertanian
+発想,はっそう,Gagasan
+発信,はっしん,Mengirim informasi
+判明,はんめい,Terungkap
+表面,ひょうめん,Permukaan
+評判,ひょうばん,Reputasi
+普及,ふきゅう,Penyebaran
+暗記,あんき,Menghafal
+移動,いどう,Perpindahan
+依頼,いらい,Permintaan
+印刷,いんさつ,Pencetakan
+違反,いはん,Pelanggaran
+受付係,うけつけがかり,Petugas resepsionis
+延期,えんき,Penundaan
+演奏,えんそう,Pertunjukan musik
+応用,おうよう,Penerapan
+屋上,おくじょう,Atap gedung
+解釈,かいしゃく,Interpretasi
+改正,かいせい,Revisi
+学科,がっか,Jurusan
+学歴,がくれき,Riwayat pendidikan
+活気,かっき,Semangat hidup
+観点,かんてん,Sudut pandang
+歓迎会,かんげいかい,Acara penyambutan
+記入,きにゅう,Pengisian formulir
+寄与,きよ,Kontribusi
+規則,きそく,Peraturan
+議長,ぎちょう,Ketua sidang
+共感,きょうかん,Empati
+教養,きょうよう,Wawasan
+金額,きんがく,Jumlah uang
+空席,くうせき,Kursi kosong
+訓読,くんよみ,Bacaan kun
+警告,けいこく,Peringatan
+傾向,けいこう,Kecenderungan
+決勝,けっしょう,Final
+見学,けんがく,Kunjungan belajar
+原稿,げんこう,Naskah
+限界,げんかい,Batas
+公開,こうかい,Dipublikasikan
+構成,こうせい,Komposisi
+講演,こうえん,Ceramah
+効率,こうりつ,Efisiensi
+雇用,こよう,Pekerjaan
+混合,こんごう,Campuran
+在庫,ざいこ,Stok barang
+採点,さいてん,Penilaian ujian
+作成,さくせい,Pembuatan
+参加者,さんかしゃ,Peserta
+残念,ざんねん,Sayang sekali
+資格者,しかくしゃ,Pemegang sertifikat
+支払い,しはらい,Pembayaran
+市民,しみん,Warga kota
+事務所,じむしょ,Kantor
+社長,しゃちょう,Presiden direktur
+就業,しゅうぎょう,Bekerja
+修正,しゅうせい,Koreksi
+需要,じゅよう,Permintaan pasar
+出張,しゅっちょう,Perjalanan dinas
+出入口,でいりぐち,Pintu masuk keluar
+証明,しょうめい,Pembuktian
+所属先,しょぞくさき,Instansi asal
+心配,しんぱい,Khawatir
+進学,しんがく,Melanjutkan studi
+人材,じんざい,Sumber daya manusia
+推薦状,すいせんじょう,Surat rekomendasi
+製品,せいひん,Produk jadi
+制限,せいげん,Pembatasan
+成功者,せいこうしゃ,Orang sukses
+整理,せいり,Merapikan
+接客,せっきゃく,Melayani pelanggan
+設備費,せつびひ,Biaya fasilitas
+専攻,せんこう,Jurusan utama
+宣言,せんげん,Deklarasi
+選挙,せんきょ,Pemilu
+全員,ぜんいん,Semua anggota
+総合,そうごう,Komprehensif
+創造,そうぞう,Kreasi
+速達,そくたつ,Kiriman kilat
+卒業式,そつぎょうしき,Upacara kelulusan
+大統領,だいとうりょう,Presiden
+対象者,たいしょうしゃ,Subjek sasaran
+滞在,たいざい,Tinggal sementara
+担当医,たんとうい,Dokter penanggung jawab
+知識人,ちしきじん,Cendekiawan
+駐車,ちゅうしゃ,Parkir
+注文,ちゅうもん,Pesanan
+長所,ちょうしょ,Kelebihan
+通訳,つうやく,Penerjemah lisan
+定期,ていき,Berkala
+適用,てきよう,Penerapan
+電池,でんち,Baterai
+登山,とざん,Mendaki gunung
+統一,とういつ,Penyatuan
+到達,とうたつ,Mencapai
+特徴点,とくちょうてん,Titik karakteristik
+読者,どくしゃ,Pembaca
+内科,ないか,Dokter penyakit dalam
+入場,にゅうじょう,Masuk arena
+認識,にんしき,Pengakuan/Pemahaman
+農家,のうか,Petani
+発言,はつげん,Pernyataan
+発行,はっこう,Penerbitan
+判決,はんけつ,Putusan hukum
+評価者,ひょうかしゃ,Penilai
+表紙,ひょうし,Sampul
+復旧,ふっきゅう,Pemulihan
+分析,ぶんせき,Analisis

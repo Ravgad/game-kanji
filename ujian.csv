@@ -1,65 +1,504 @@
 stage,soal,jawaban,arti
-2,何,なに/なん,apa
-2,何人,なにじん,kebangsaan apa
-2,何人,なんにん,berapa orang
-2,何年,なんねん,berapa tahun
-2,何時,なんじ,jam berapa
-2,手,て,tangan
-2,手紙,てがみ,surat
-2,手伝う,てつだう,membantu
-2,上手な,じょうずな,pandai
-2,下手な,へたな,tidak pandai
-2,切る,きる,memotong
-2,切手,きって,perangko
-2,切符,きっぷ,tiket
-2,大切な,たいせつな,penting
-2,分かる,わかる,mengerti
-2,分ける,わける,membagi
-2,五分,ごふん,5 menit
-2,二十分,にじゅっぷん,20 menit
-2,半分,はんぶん,setengah
-2,十分な,じゅうぶんな,cukup
-2,今,いま,sekarang
-2,今晩,こんばん,malam ini
-2,今年,ことし,tahun ini
-2,今朝,けさ,tadi pagi
-2,今日,きょう,hari ini
-2,半分,はんぶん,setengah
-2,三時半,さんじはん,jam 3:30
-2,半年,はんとし,setengah tahun
-2,前半,ぜんはん,paruh pertama
-2,後半,こうはん,paruh kedua
-2,止まる,とまる,berhenti
-2,止める,とめる,menghentikan
-2,正しい,ただしい,benar
-2,お正月,おしょうがつ,tahun baru
-2,歩く,あるく,berjalan
-2,足,あし,kaki
-2,足す,たす,menambah
-2,足りる,たりる,cukup
-2,不足する,ふそくする,kekurangan
-2,走る,はしる,berlari
-2,走者,そうしゃ,pelari
-2,起きる,おきる,bangun
-2,起こす,おこす,membangunkan
-2,夕方,ゆうがた,sore
-2,夕飯,ゆうはん,makan malam
-2,夕食,ゆうしょく,makan malam
-2,外,そと,luar
-2,外の,ほかの,yang lain
-2,海外,かいがい,luar negeri
-2,外出する,がいしゅつする,keluar
-2,多い,おおい,banyak
-2,多分,たぶん,mungkin
-2,名前,なまえ,nama
-2,有名な,ゆうめいな,terkenal
-2,夜,よる,malam
-2,今夜,こんや,malam ini
-2,夜食,やしょく,cemilan malam
-2,生まれる,うまれる,lahir
-2,生きる,いきる,hidup
-2,大学生,だいがくせい,mahasiswa
-2,先生,せんせい,guru
-2,生徒,せいと,siswa
-2,生活する,せいかつする,hidup
-2,誕生日,たんじょうび,ulang tahun
+1,世界,せかい,Dunia
+1,文化,ぶんか,Budaya
+1,社会,しゃかい,Masyarakat
+1,経験,けいけん,Pengalaman
+1,説明,せつめい,Penjelasan
+1,連絡,れんらく,Kontak
+1,確認,かくにん,Konfirmasi
+1,計画,けいかく,Rencana
+1,準備,じゅんび,Persiapan
+1,結果,けっか,Hasil
+1,理由,りゆう,Alasan
+1,方法,ほうほう,Metode
+1,環境,かんきょう,Lingkungan
+1,経済,けいざい,Ekonomi
+1,技術,ぎじゅつ,Teknologi
+1,管理,かんり,Manajemen
+1,制度,せいど,Sistem
+1,関係,かんけい,Hubungan
+1,現実,げんじつ,Kenyataan
+1,将来,しょうらい,Masa Depan
+1,現在,げんざい,Sekarang
+1,過去,かこ,Masa Lalu
+1,必要,ひつよう,Perlu
+1,重要,じゅうよう,Penting
+1,大切,たいせつ,Berharga
+1,普通,ふつう,Biasa
+1,特別,とくべつ,Khusus
+1,最近,さいきん,Akhir-akhir Ini
+1,最初,さいしょ,Pertama
+1,最後,さいご,Terakhir
+1,途中,とちゅう,Di Tengah Jalan
+1,状態,じょうたい,Kondisi
+1,状況,じょうきょう,Keadaan
+1,変化,へんか,Perubahan
+1,増加,ぞうか,Peningkatan
+1,減少,げんしょう,Penurunan
+1,発展,はってん,Perkembangan
+1,成長,せいちょう,Pertumbuhan
+1,成功,せいこう,Keberhasilan
+1,失敗,しっぱい,Kegagalan
+1,努力,どりょく,Usaha
+1,挑戦,ちょうせん,Tantangan
+1,選択,せんたく,Pilihan
+1,決定,けってい,Keputusan
+1,判断,はんだん,Penilaian
+1,理解,りかい,Pemahaman
+1,解決,かいけつ,Penyelesaian
+1,調査,ちょうさ,Penelitian
+1,報告,ほうこく,Laporan
+1,比較,ひかく,Perbandingan
+1,内容,ないよう,Isi
+1,意味,いみ,Makna
+1,価値,かち,Nilai
+1,意見,いけん,Pendapat
+1,感情,かんじょう,Perasaan
+1,行動,こうどう,Tindakan
+1,責任,せきにん,Tanggung Jawab
+1,義務,ぎむ,Kewajiban
+1,権利,けんり,Hak
+1,自由,じゆう,Kebebasan
+1,平等,びょうどう,Kesetaraan
+1,協力,きょうりょく,Kerja Sama
+1,競争,きょうそう,Persaingan
+1,交流,こうりゅう,Pertukaran
+1,支援,しえん,Dukungan
+1,援助,えんじょ,Bantuan
+1,保護,ほご,Perlindungan
+1,安全,あんぜん,Keamanan
+1,危険,きけん,Bahaya
+1,健康,けんこう,Kesehatan
+1,生活,せいかつ,Kehidupan
+1,習慣,しゅうかん,Kebiasaan
+1,自然,しぜん,Alam
+1,資源,しげん,Sumber Daya
+1,消費,しょうひ,Konsumsi
+1,生産,せいさん,Produksi
+1,販売,はんばい,Penjualan
+1,価格,かかく,Harga
+1,市場,しじょう,Pasar
+1,収入,しゅうにゅう,Pendapatan
+1,支出,ししゅつ,Pengeluaran
+1,利益,りえき,Keuntungan
+1,損失,そんしつ,Kerugian
+1,人口,じんこう,Populasi
+1,都市,とし,Kota
+1,地域,ちいき,Wilayah
+1,国家,こっか,Negara
+1,政府,せいふ,Pemerintah
+1,政策,せいさく,Kebijakan
+1,経営,けいえい,Manajemen Bisnis
+1,運営,うんえい,Operasional
+1,伝統,でんとう,Tradisi
+1,歴史,れきし,Sejarah
+1,宗教,しゅうきょう,Agama
+1,目的,もくてき,Tujuan
+1,原因,げんいん,Penyebab
+1,手段,しゅだん,Sarana
+1,機能,きのう,Fungsi
+1,特徴,とくちょう,Ciri Khas
+1,案内,あんない,Panduan
+1,受付,うけつけ,Resepsionis
+1,運転,うんてん,Mengemudi
+1,往復,おうふく,Pulang-pergi
+1,会議,かいぎ,Rapat
+1,会話,かいわ,Percakapan
+1,解答,かいとう,Jawaban
+1,活動,かつどう,Aktivitas
+1,課題,かだい,Tugas
+1,家庭,かてい,Rumah tangga
+1,可能,かのう,Memungkinkan
+1,記録,きろく,Catatan
+1,客観,きゃっかん,Objektif
+1,教育,きょういく,Pendidikan
+1,共通,きょうつう,Umum
+1,協会,きょうかい,Asosiasi
+1,緊張,きんちょう,Tegang
+1,空港,くうこう,Bandara
+1,訓練,くんれん,Latihan
+1,警察,けいさつ,Polisi
+1,景色,けしき,Pemandangan
+1,建設,けんせつ,Konstruksi
+1,研究,けんきゅう,Penelitian
+1,見物,けんぶつ,Tamasya
+1,交通,こうつう,Transportasi
+1,工場,こうじょう,Pabrik
+1,行事,ぎょうじ,Acara
+1,国民,こくみん,Warga negara
+1,国際,こくさい,Internasional
+1,細胞,さいぼう,Sel
+1,作業,さぎょう,Pekerjaan
+1,作品,さくひん,Karya
+1,作家,さっか,Pengarang
+1,産業,さんぎょう,Industri
+1,資料,しりょう,Data
+1,試験,しけん,Ujian
+1,事件,じけん,Kasus
+1,実現,じつげん,Mewujudkan
+1,実際,じっさい,Sebenarnya
+1,実力,じつりょく,Kemampuan
+1,社員,しゃいん,Karyawan
+1,住宅,じゅうたく,Perumahan
+1,集中,しゅうちゅう,Konsentrasi
+1,出席,しゅっせき,Kehadiran
+1,出発,しゅっぱつ,Keberangkatan
+1,使用,しよう,Penggunaan
+1,商品,しょうひん,Produk
+1,消失,しょうしつ,Hilang
+1,証拠,しょうこ,Bukti
+1,情報化,じょうほうか,Digitalisasi
+1,職業,しょくぎょう,Profesi
+1,食品,しょくひん,Bahan makanan
+1,信号,しんごう,Lampu lalu lintas
+1,信頼,しんらい,Kepercayaan
+1,心理,しんり,Psikologi
+1,水準,すいじゅん,Tingkat
+1,数学,すうがく,Matematika
+1,性格,せいかく,Kepribadian
+1,生命,せいめい,Kehidupan
+1,責任者,せきにんしゃ,Penanggung jawab
+1,設備,せつび,Fasilitas
+1,専門,せんもん,Spesialisasi
+1,戦争,せんそう,Perang
+1,相談,そうだん,Konsultasi
+1,存在感,そんざいかん,Kehadiran
+1,大学,だいがく,Universitas
+1,代表,だいひょう,Perwakilan
+1,大会,たいかい,Turnamen
+1,対象,たいしょう,Target
+1,態度,たいど,Sikap
+1,担当,たんとう,Penanggung jawab
+1,誕生,たんじょう,Kelahiran
+1,地域社会,ちいきしゃかい,Masyarakat lokal
+1,地球,ちきゅう,Bumi
+1,知事,ちじ,Gubernur
+1,知能,ちのう,Kecerdasan
+1,駐車場,ちゅうしゃじょう,Tempat parkir
+1,直接,ちょくせつ,Langsung
+1,通信,つうしん,Komunikasi
+1,提案書,ていあんしょ,Dokumen usulan
+1,天候,てんこう,Cuaca
+1,電力,でんりょく,Listrik
+1,登場,とうじょう,Kemunculan
+1,投票,とうひょう,Pemungutan suara
+1,到着,とうちゃく,Kedatangan
+1,動物園,どうぶつえん,Kebun binatang
+1,独立,どくりつ,Kemerdekaan
+1,内容量,ないようりょう,Isi bersih
+1,能力,のうりょく,Kemampuan
+1,農業,のうぎょう,Pertanian
+1,発見,はっけん,Penemuan
+1,発明,はつめい,Penemuan/Inovasi
+1,判断力,はんだんりょく,Kemampuan menilai
+1,反対,はんたい,Menentang
+1,費用,ひよう,Biaya
+1,品質,ひんしつ,Kualitas
+1,夫婦,ふうふ,Suami istri
+1,復習,ふくしゅう,Mengulang pelajaran
+1,文章,ぶんしょう,Tulisan
+1,訪問,ほうもん,Kunjungan
+1,貿易,ぼうえき,Perdagangan internasional
+1,割合,わりあい,Persentase
+1,場合,ばあい,Kasus
+1,場面,ばめん,Adegan/Situasi
+1,方向,ほうこう,Arah
+1,方針,ほうしん,Kebijakan
+1,部分,ぶぶん,Bagian
+1,範囲,はんい,Cakupan
+1,番号,ばんごう,Nomor
+1,発達,はったつ,Perkembangan
+1,発表会,はっぴょうかい,Pertunjukan
+1,表情,ひょうじょう,Ekspresi wajah
+1,評価,ひょうか,Evaluasi
+1,表現,ひょうげん,Ekspresi
+1,不安,ふあん,Khawatir
+1,不満,ふまん,Tidak puas
+1,負担,ふたん,Beban
+1,不足,ふそく,Kekurangan
+1,部品,ぶひん,Suku cadang
+1,平均,へいきん,Rata-rata
+1,変更,へんこう,Perubahan
+1,返事,へんじ,Balasan
+1,豊富,ほうふ,Kaya/Berlimpah
+1,訪問者,ほうもんしゃ,Pengunjung
+1,保存,ほぞん,Penyimpanan
+1,保証,ほしょう,Jaminan
+1,本当,ほんとう,Sebenarnya
+1,未来,みらい,Masa depan
+1,魅力,みりょく,Daya tarik
+1,無理,むり,Tidak mungkin
+1,無料,むりょう,Gratis
+1,目的地,もくてきち,Tujuan akhir
+1,役所,やくしょ,Kantor pemerintahan
+1,役目,やくめ,Peran/Tugas
+1,有効,ゆうこう,Efektif
+1,有利,ゆうり,Menguntungkan
+1,輸出,ゆしゅつ,Ekspor
+1,輸入,ゆにゅう,Impor
+1,要求,ようきゅう,Tuntutan
+1,様子,ようす,Keadaan
+1,予定,よてい,Rencana
+1,予想,よそう,Prediksi
+1,予算,よさん,Anggaran
+1,予約,よやく,Reservasi
+1,留学,りゅうがく,Belajar di luar negeri
+1,留守,るす,Tidak di rumah
+1,例外,れいがい,Pengecualian
+1,歴代,れきだい,Berturut-turut
+1,労働,ろうどう,Pekerjaan/Buruh
+1,話題,わだい,Topik
+1,割合的,わりあいてき,Secara proporsional
+1,温度,おんど,Suhu
+1,温泉,おんせん,Mata air panas
+1,音声,おんせい,Suara
+1,会場,かいじょう,Tempat acara
+1,解説,かいせつ,Penjelasan
+1,確率,かくりつ,Probabilitas
+1,学習,がくしゅう,Pembelajaran
+1,活用,かつよう,Pemanfaatan
+1,観光,かんこう,Pariwisata
+1,観察,かんさつ,Pengamatan
+1,感想,かんそう,Kesan
+1,感謝,かんしゃ,Rasa terima kasih
+1,記憶,きおく,Ingatan
+1,機会,きかい,Kesempatan
+1,気候,きこう,Iklim
+1,期待,きたい,Harapan
+1,記者,きしゃ,Wartawan
+1,規模,きぼ,Skala
+1,休日,きゅうじつ,Hari libur
+1,競技,きょうぎ,Pertandingan
+1,興味,きょうみ,Minat
+1,近所,きんじょ,Lingkungan sekitar
+1,苦労,くろう,Kesulitan
+1,経由,けいゆ,Melalui
+1,欠席,けっせき,Tidak hadir
+1,現金,げんきん,Uang tunai
+1,現代,げんだい,Zaman modern
+1,効果,こうか,Efek
+1,工夫,くふう,Kreativitas
+1,交通費,こうつうひ,Biaya transportasi
+1,広告,こうこく,Iklan
+1,講義,こうぎ,Kuliah
+1,故障,こしょう,Kerusakan
+1,国語,こくご,Bahasa nasional
+1,混雑,こんざつ,Kepadatan
+1,材料,ざいりょう,Bahan
+1,財布,さいふ,Dompet
+1,採用,さいよう,Perekrutan
+1,作戦,さくせん,Strategi
+1,残業,ざんぎょう,Lembur
+1,市場調査,しじょうちょうさ,Riset pasar
+1,支店,してん,Cabang
+1,実験,じっけん,Eksperimen
+1,実施,じっし,Pelaksanaan
+1,質問,しつもん,Pertanyaan
+1,実用,じつよう,Praktis
+1,首都,しゅと,Ibu kota
+1,順番,じゅんばん,Urutan
+1,消極的,しょうきょくてき,Pasif
+1,成績,せいせき,Nilai akademik
+1,積極的,せっきょくてき,Aktif
+1,接続,せつぞく,Koneksi
+1,握手,あくしゅ,Jabat tangan
+1,印象,いんしょう,Kesan
+1,引用,いんよう,Kutipan
+1,宇宙,うちゅう,Alam semesta
+1,営業,えいぎょう,Bisnis
+1,演技,えんぎ,Akting
+1,応援,おうえん,Dukungan
+1,応募,おうぼ,Lamaran
+1,解消,かいしょう,Penyelesaian
+1,改良,かいりょう,Perbaikan
+1,確保,かくほ,Mengamankan
+1,活躍,かつやく,Aktif berprestasi
+1,活発,かっぱつ,Aktif
+1,歓迎,かんげい,Sambutan
+1,観客,かんきゃく,Penonton
+1,企業,きぎょう,Perusahaan
+1,帰国,きこく,Pulang ke negara asal
+1,寄付,きふ,Donasi
+1,義理,ぎり,Kewajiban moral
+1,禁止,きんし,Larangan
+1,偶然,ぐうぜん,Kebetulan
+1,敬語,けいご,Bahasa hormat
+1,契約,けいやく,Kontrak
+1,結局,けっきょく,Pada akhirnya
+1,健康的,けんこうてき,Sehat
+1,現場,げんば,Lokasi kerja
+1,候補,こうほ,Calon
+1,行列,ぎょうれつ,Antrean
+1,高速,こうそく,Kecepatan tinggi
+1,貢献,こうけん,Kontribusi
+1,国籍,こくせき,Kewarganegaraan
+1,骨折,こっせつ,Patah tulang
+1,混乱,こんらん,Kekacauan
+1,再会,さいかい,Bertemu kembali
+1,再生,さいせい,Pemulihan
+1,作曲,さっきょく,Komposisi musik
+1,撮影,さつえい,Pemotretan
+1,参考,さんこう,Referensi
+1,賛成,さんせい,Setuju
+1,資格,しかく,Kualifikasi
+1,刺激,しげき,Stimulasi
+1,支給,しきゅう,Pemberian
+1,自然体,しぜんたい,Alami
+1,失業,しつぎょう,Pengangguran
+1,実感,じっかん,Perasaan nyata
+1,実績,じっせき,Pencapaian
+1,指導者,しどうしゃ,Pemimpin
+1,支配,しはい,Kendali
+1,死亡,しぼう,Kematian
+1,締切,しめきり,Batas waktu
+1,就職,しゅうしょく,Mendapat pekerjaan
+1,修理,しゅうり,Perbaikan
+1,受験,じゅけん,Mengikuti ujian
+1,受賞,じゅしょう,Menerima penghargaan
+1,出場,しゅつじょう,Ikut serta
+1,順調,じゅんちょう,Lancar
+1,省略,しょうりゃく,Singkatan
+1,証明書,しょうめいしょ,Sertifikat
+1,所属,しょぞく,Afiliasi
+1,新鮮,しんせん,Segar
+1,信仰,しんこう,Kepercayaan
+1,人数,にんずう,Jumlah orang
+1,推薦,すいせん,Rekomendasi
+1,睡眠,すいみん,Tidur
+1,清潔,せいけつ,Bersih
+1,責任感,せきにんかん,Rasa tanggung jawab
+1,接近,せっきん,Mendekat
+1,説得,せっとく,Membujuk
+1,宣伝,せんでん,Promosi
+1,選手,せんしゅ,Atlet
+1,想像,そうぞう,Imajinasi
+1,騒音,そうおん,Kebisingan
+1,存在,そんざい,Keberadaan
+1,卒業,そつぎょう,Lulus
+1,逮捕,たいほ,Penangkapan
+1,体験,たいけん,Pengalaman langsung
+1,大会場,だいかいじょう,Tempat acara besar
+1,担当者,たんとうしゃ,Petugas
+1,単純,たんじゅん,Sederhana
+1,注意点,ちゅういてん,Hal yang perlu diperhatikan
+1,調整中,ちょうせいちゅう,Sedang disesuaikan
+1,追求,ついきゅう,Mengejar
+1,提案,ていあん,Usulan
+1,適切,てきせつ,Tepat
+1,徹底,てってい,Menyeluruh
+1,転勤,てんきん,Mutasi kerja
+1,展覧会,てんらんかい,Pameran
+1,統計,とうけい,Statistik
+1,登録,とうろく,Pendaftaran
+1,特徴的,とくちょうてき,Khas
+1,努力家,どりょくか,Pekerja keras
+1,入学,にゅうがく,Masuk sekolah
+1,認定,にんてい,Sertifikasi
+1,農産物,のうさんぶつ,Hasil pertanian
+1,発想,はっそう,Gagasan
+1,発信,はっしん,Mengirim informasi
+1,判明,はんめい,Terungkap
+1,表面,ひょうめん,Permukaan
+1,評判,ひょうばん,Reputasi
+1,普及,ふきゅう,Penyebaran
+1,暗記,あんき,Menghafal
+1,移動,いどう,Perpindahan
+1,依頼,いらい,Permintaan
+1,印刷,いんさつ,Pencetakan
+1,違反,いはん,Pelanggaran
+1,受付係,うけつけがかり,Petugas resepsionis
+1,延期,えんき,Penundaan
+1,演奏,えんそう,Pertunjukan musik
+1,応用,おうよう,Penerapan
+1,屋上,おくじょう,Atap gedung
+1,解釈,かいしゃく,Interpretasi
+1,改正,かいせい,Revisi
+1,学科,がっか,Jurusan
+1,学歴,がくれき,Riwayat pendidikan
+1,活気,かっき,Semangat hidup
+1,観点,かんてん,Sudut pandang
+1,歓迎会,かんげいかい,Acara penyambutan
+1,記入,きにゅう,Pengisian formulir
+1,寄与,きよ,Kontribusi
+1,規則,きそく,Peraturan
+1,議長,ぎちょう,Ketua sidang
+1,共感,きょうかん,Empati
+1,教養,きょうよう,Wawasan
+1,金額,きんがく,Jumlah uang
+1,空席,くうせき,Kursi kosong
+1,訓読,くんよみ,Bacaan kun
+1,警告,けいこく,Peringatan
+1,傾向,けいこう,Kecenderungan
+1,決勝,けっしょう,Final
+1,見学,けんがく,Kunjungan belajar
+1,原稿,げんこう,Naskah
+1,限界,げんかい,Batas
+1,公開,こうかい,Dipublikasikan
+1,構成,こうせい,Komposisi
+1,講演,こうえん,Ceramah
+1,効率,こうりつ,Efisiensi
+1,雇用,こよう,Pekerjaan
+1,混合,こんごう,Campuran
+1,在庫,ざいこ,Stok barang
+1,採点,さいてん,Penilaian ujian
+1,作成,さくせい,Pembuatan
+1,参加者,さんかしゃ,Peserta
+1,残念,ざんねん,Sayang sekali
+1,資格者,しかくしゃ,Pemegang sertifikat
+1,支払い,しはらい,Pembayaran
+1,市民,しみん,Warga kota
+1,事務所,じむしょ,Kantor
+1,社長,しゃちょう,Presiden direktur
+1,就業,しゅうぎょう,Bekerja
+1,修正,しゅうせい,Koreksi
+1,需要,じゅよう,Permintaan pasar
+1,出張,しゅっちょう,Perjalanan dinas
+1,出入口,でいりぐち,Pintu masuk keluar
+1,証明,しょうめい,Pembuktian
+1,所属先,しょぞくさき,Instansi asal
+1,心配,しんぱい,Khawatir
+1,進学,しんがく,Melanjutkan studi
+1,人材,じんざい,Sumber daya manusia
+1,推薦状,すいせんじょう,Surat rekomendasi
+1,製品,せいひん,Produk jadi
+1,制限,せいげん,Pembatasan
+1,成功者,せいこうしゃ,Orang sukses
+1,整理,せいり,Merapikan
+1,接客,せっきゃく,Melayani pelanggan
+1,設備費,せつびひ,Biaya fasilitas
+1,専攻,せんこう,Jurusan utama
+1,宣言,せんげん,Deklarasi
+1,選挙,せんきょ,Pemilu
+1,全員,ぜんいん,Semua anggota
+1,総合,そうごう,Komprehensif
+1,創造,そうぞう,Kreasi
+1,速達,そくたつ,Kiriman kilat
+1,卒業式,そつぎょうしき,Upacara kelulusan
+1,大統領,だいとうりょう,Presiden
+1,対象者,たいしょうしゃ,Subjek sasaran
+1,滞在,たいざい,Tinggal sementara
+1,担当医,たんとうい,Dokter penanggung jawab
+1,知識人,ちしきじん,Cendekiawan
+1,駐車,ちゅうしゃ,Parkir
+1,注文,ちゅうもん,Pesanan
+1,長所,ちょうしょ,Kelebihan
+1,通訳,つうやく,Penerjemah lisan
+1,定期,ていき,Berkala
+1,適用,てきよう,Penerapan
+1,電池,でんち,Baterai
+1,登山,とざん,Mendaki gunung
+1,統一,とういつ,Penyatuan
+1,到達,とうたつ,Mencapai
+1,特徴点,とくちょうてん,Titik karakteristik
+1,読者,どくしゃ,Pembaca
+1,内科,ないか,Dokter penyakit dalam
+1,入場,にゅうじょう,Masuk arena
+1,認識,にんしき,Pengakuan/Pemahaman
+1,農家,のうか,Petani
+1,発言,はつげん,Pernyataan
+1,発行,はっこう,Penerbitan
+1,判決,はんけつ,Putusan hukum
+1,評価者,ひょうかしゃ,Penilai
+1,表紙,ひょうし,Sampul
+1,復旧,ふっきゅう,Pemulihan
+1,分析,ぶんせき,Analisis
